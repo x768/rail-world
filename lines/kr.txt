@@ -1,0 +1,944 @@
+################################# korail ###########################
+begin rail-h korail
+m $busan-kr -19 -6
+lbox Busan/釜山 busan 10 3
+ne 3
+n 21
+box Ulsan/蔚山
+n 12
+box Singyeongju/新慶州 singyeongju
+w 31
+lbox Dongdaegu/東大邱 dongdaegu 17 3
+nw 3
+w 19
+box Gimcheon-Gumi
+w 15
+lbox Daejeon/大田 daejeon 13 3
+n 10
+box Osong/五松 osong-chungju
+nw 6
+w 2
+nw 4
+box Asan/牙山 asan-chungju
+nw 12
+n 10
+box Gwangmyeong/光明 gwangmyeong
+end
+
+begin rail-h korail-light
+m gwangmyeong
+n 4
+ne 14
+e 17
+end
+
+begin rail-h korail
+m osong-chungju
+sw 5
+w 8
+sw 2
+s 12
+box Iksan/益山 iksan-jeonju
+s 9
+box Jeongeup/井邑 jeongeup-jeonju
+s 8
+end
+
+begin rail-h suseo-hsrl
+m asan-chungju
+ne 6
+box Jije/芝制
+e 12
+ne 2
+n 3
+box Dongtan/東灘
+n 2
+ne 4
+e 14
+ne 4
+n 2
+box Suseo/水西
+end
+
+begin rail korail
+m busan
+w 8
+nw 4
+box Sasang sasang-busan
+nw 1
+n 2
+nw 4
+n 3
+box Gupo
+n 7
+nw 1
+w 10
+dc Samnangjin samnangjin
+n 4
+dc Miryang
+n 2
+dc Gyeongsan
+n 2
+dc Gacheon
+n 6
+w 8
+box Daegu daegu
+w 16
+dc Gumi
+w 4
+dc Gimcheon gimcheon-gyeongju
+w 5
+dc Yeongdong
+w 1
+nw 3
+w 6
+ur Hoedeok hoedeok
+n 8
+ur Jochiwon jochiwon
+n 4
+ur Jeonui jeonui
+n 8
+box Cheonan cheonan-jeonju
+end
+
+begin rail korail
+m jochiwon
+ne 2
+e 4
+ne 6
+dc Cheongju
+ne 6
+e 4
+dc Jeungpyeong
+e 10
+dc Eumseong
+e 10
+dc Chungju
+e 14
+end
+
+begin rail korail
+m jeonui
+se 2
+end
+
+begin rail korail
+m singyeongju
+n 2
+ne 9
+dc Pohang
+end
+
+begin rail korail
+m sasang-busan
+ne 3
+e 3
+box Bujeon bujeon
+n 3
+ne 2
+e 11
+box Dongnae dongnae-busan
+e 5
+box BEXCO bexco-busan
+n 5
+dc Sinhaeundae
+n 5
+dc Gijang
+n 5
+dc Taehwagang
+n 5
+dc Hogye
+n 5
+dc Gyeongju gyeongju
+n 5
+dc Angang
+end
+
+begin rail korail
+m samnangjin
+s 14
+dc Jillye
+w 4
+dc Changwon
+w 4
+dc Masan
+w 4
+dc Haman
+w 4
+dc Jinju
+w 8
+dc Suncheon
+w 8
+dc Boseong
+w 2
+nw 1
+n 3
+nw 1
+w 1
+dr Hwasun
+w 13
+box Songjeong/松汀 songjeong-gwangju
+end
+
+begin rail korail
+m hoedeok
+w 4
+ur Gyeryong
+w 1
+sw 2
+s 2
+dc Nonsan
+s 9
+dc Gimje
+s 17
+dc Naju
+s 4
+dc Mokpo
+end
+
+begin rail korail
+m gyeongju
+nw 8
+w 6
+dc Yeongcheon yeongcheon-gyeongju
+w 12
+nw 1
+n 3
+dc Uiseong
+n 4
+dc Yeongju
+n 4
+dc Jecheon jecheon-chungju
+n 4
+dc Bongyang
+n 26
+dc Manjong manjong-gangju
+n 24
+nw 1
+end
+
+begin rail korail
+m manjong-gangju 0 0
+e 11
+dc Bubal
+e 11
+end
+
+begin rail korail
+m yeongcheon-gyeongju
+s 3
+sw 1
+w 7
+dc Hayang
+w 5
+sw 11
+w 2
+end
+
+begin rail korail
+m songjeong-gwangju
+ne 5
+e 4
+lbox Gwangju/光州 gwangju 12 3
+end
+
+begin rail korail
+m iksan-jeonju
+e 14
+dc Jeonju
+e 4
+se 10
+s 2
+dc Namwon
+s 16
+dc Yeosu_EXPO
+end
+
+begin rail korail
+m gimcheon-gyeongju
+n 10
+ne 7
+e 10
+dc Jeomchon
+e 32
+dc Chunyang
+e 10
+dc Seokpo
+e 2
+ne 2
+n 2
+dc Baeksan
+n 15
+dc Donghae
+n 15
+dc Gangneung
+end
+
+begin rail korail
+m jecheon-chungju
+e 9
+ur Yeongwol
+e 4
+ur Mindungsan
+e 4
+ur Taebaek
+e 5
+end
+
+begin rail seoul-1
+m cheonan-jeonju
+w 13
+sw 1
+s 4
+box Sinchang sinchang-chungju
+end
+
+begin rail korail
+m sinchang-chungju
+s 6
+dc Hongseong
+s 6
+dc Daecheon
+s 6
+dc Gunsan
+s 5
+se 1
+e 4
+end
+
+################################# metro ###########################
+begin rail busan-1
+m busan -17 3
+ur Dadaepo_Beach
+e 5
+box Hadan
+e 11
+ne 1
+n 6
+box Seomyeon seomyeon-busan
+n 3
+box Bujeon bujeon
+n 3
+box Yeonsan yeonsan-busan
+n 2
+box Univ_of_Edu
+n 2
+box Dongnae
+n 5
+dc Nopo
+end
+
+begin rail busan-2
+m yeonsan-busan 15 1
+dc Jangsan
+nw 3
+sw 2
+w 3
+box Suyeong suyeong
+s 5
+sw 1
+w 18
+n 15
+dc Yangsan
+end
+
+begin rail busan-3
+m suyeong
+w 13
+box Geoje
+n 4
+box Minam minam-busan
+w 6
+box Deokcheon
+w 9
+box Daejeo
+end
+
+begin rail busan-4
+m minam-busan
+e 13
+box Nangmin dongnae-busan
+n 5
+dc Anpyeong
+end
+
+begin rail busan-bgl
+m sasang-busan
+nw 2
+w 7
+n 2
+box ✈Gimhae_A.P.
+n 11
+dc Kaya_Univ.
+end
+
+begin rail daegu-1
+m dongdaegu 8 -2
+ur Ansim
+w 3
+sw 1
+w 11
+sw 1
+s 3
+box Banwoldang banwoldang-daegu
+s 2
+box Myeongdeok
+s 2
+sw 1
+w 4
+dc Seolhwa_Myeonggok
+end
+
+begin rail daegu-2
+m banwoldang-daegu -13 0
+dc Munyang
+e 6
+box Sinnam sinnam-daegu
+e 22
+dc Yeungnam_Univ.
+end
+
+begin rail daegu-3
+m sinnam-daegu 0 -10
+ur Chilgok_Hospital
+s 11
+se 1
+e 9
+se 1
+s 3
+dc Yongji
+end
+
+begin rail gwangju-1
+m songjeong-gwangju -4 2
+dr Pyeongdong
+e 2
+ne 2
+e 3
+ne 2
+e 4
+box ✈Gwangju_A.P. 
+e 8
+dc Nokdong
+end
+
+begin rail daejeon-1
+m daejeon 7 -3
+ur Panam
+w 4
+sw 6
+w 4
+dc Banseok
+end
+
+################################# seoul ###########################
+
+begin rail seoul-1
+m cheonan-jeonju
+n 3
+dc Pyeongtaek
+n 3
+nw 5
+box Byeongjeom byeongjeom-gyeonggi
+nw 2
+box Suwon/水原 suwon-seoul
+nw 5
+box Geumjeong
+n 4
+dc G/Gu-office geumjeong-office
+n 3
+box Gasan_Digital
+n 3
+dc Guro guro-seoul
+w 6
+box Onsu
+w 7
+box Bupyeong
+w 7
+box Juan
+w 6
+lbox Incheon/仁川 incheon 12 3
+end
+
+begin rail seoul-1
+m geumjeong-office
+w 6
+end
+
+begin rail seoul-1
+m guro-seoul
+e 7
+box Sindorim sindorim-seoul
+e 6
+box Singil
+e 6
+box Noryangjin
+ne 3
+box Yongsan
+n 4
+ne 4
+n 1
+lbox Seoul seoul 10 3
+n 7
+ne 1
+e 5
+box Jongno3
+ne 2
+e 2
+box Dongdaemun
+e 2
+se 2
+box Dongmyo
+e 7
+box Sinseoldong sinseoldong-seoul
+ne 2
+e 3
+box Cheongnyangni
+n 3
+box Hoegi
+n 3
+box Seokgye
+n 3
+box Changdong
+n 3
+box Dobongsan
+n 2
+box Hoeryong hoeryong-uijeongbu
+n 2
+box Uijeongbu/議政府
+n 4
+box Soyosan soyosan-uijeongbu
+end
+
+begin rail korail
+m soyosan-uijeongbu
+n 3
+box Baengmagoji
+end
+
+begin rail seoul-1
+m byeongjeom-gyeonggi
+e 10
+dc Seodongtan
+end
+
+begin rail seoul-bundang
+m suwon-seoul
+e 24
+se 8
+e 12
+box Giheung giheung-seoul
+n 4
+box Migeum migeum-seoul
+n 2
+box Jeongja
+e 1
+ne 3
+box Imae
+n 3
+box Moran
+n 3
+box Bokjeong
+end
+
+begin rail seoul-bundang
+m incheon
+s 9
+se 1
+e 10
+box Woninjae woninjae-incheon
+e 6
+box Oido oido-seoul
+end
+
+begin rail incheon-2
+m woninjae-incheon 0 4
+dc Bussines_Dist.
+n 6
+ne 2
+n 4
+box City_Hall incheon-city-hall
+n 5
+box B/Gu-office bupyeong-office-seoul
+n 3
+box Gyeyang gyeyang-incheon
+end
+
+begin rail incheon-1
+m incheon-city-hall 4 0
+dc Unyeon
+w 10
+nw 1
+n 4
+box Seongnam
+n 3
+box Geomam
+n 4
+ur Geomdan_Oryu
+end
+
+begin rail seoul-2
+m sindorim-seoul
+n 3
+box Y/Gu-office
+n 3
+box Dangsan
+ne 4
+box Hapjeong
+ne 3
+box Hongik_Univ.
+ne 3
+e 3
+box Chungjeongno
+ne 2
+e 4
+box City_Hall
+e 6
+box Euljiro3
+e 4
+box D
+e 4
+box Sindang
+se 4
+box Wangsimni
+se 2
+e 2
+box Seongsu seongsu-seoul
+se 3
+box Konkuk_Univ.
+s 4
+box Jamsil
+sw 2
+w 2
+box Sports_Cpx.
+s 3
+sw 3
+w 3
+box Seolleung
+w 6
+box Gangnam
+w 1
+sw 2
+box Univ_of_Edu
+w 6
+box Sadang
+w 18
+nw 1
+n 4
+end
+
+begin rail seoul-2
+m sindorim-seoul
+w 2
+nw 2
+w 4
+nw 1
+box Kkachisan kkachisan-seoul
+end
+
+begin rail seoul-2
+m seongsu-seoul
+n 7
+nw 1
+end
+
+begin rail seoul-4
+m oido-seoul
+e 34
+ne 1
+n 9
+box Dongjak
+n 6
+box Samgakji
+n 6
+ne 3
+e 3
+box Chungmuro
+e 1
+ne 3
+n 7
+box Sungshin_Univ.
+n 5
+ne 1
+e 25
+uc Danggogae
+end
+
+begin rail seoul-5
+m kkachisan-seoul
+w 3
+nw 1
+n 2
+box ✈Gimpo_A.P. gimpo-seoul
+n 4
+ur Banghwa
+end
+
+begin rail seoul-5
+m kkachisan-seoul
+e 12
+se 3
+ne 3
+box Yeouido
+n 3
+ne 4
+box Gonddeok
+n 11
+ne 1
+e 9
+se 2
+e 2
+se 4
+e 2
+box Cheonggu
+se 2
+e 10
+box Gunja
+e 1
+se 3
+box Cheonho cheonho-seoul
+e 4
+dc Gangdong gangdong-seoul
+e 3
+dc Sangildong
+end
+
+begin rail seoul-5
+m gangdong-seoul
+s 10
+box Olympic_Park
+s 4
+box Ogeum ogeum-seoul
+s 2
+dc Macheon
+end
+
+begin rail seoul-3
+m ogeum-seoul
+w 6
+box Garak_Market
+sw 2
+w 11
+box Dogok
+sw 2
+w 4
+box Yangjae
+w 2
+nw 1
+n 29
+nw 1
+w 16
+box Bulgwang bulgwang-seoul
+nw 2
+box Yeonsinnae
+w 17
+ur Daehwa
+end
+
+begin rail seoul-6
+m bulgwang-seoul -3 2
+dc Eungam
+e 1
+ne 4
+nw 2
+sw 3
+s 3
+sw 3
+w 1
+s 6
+se 3
+e 9
+s 4
+e 10
+ne 2
+box Yaksu
+ne 3
+e 4
+ne 1
+n 8
+ne 3
+e 1
+ne 5
+e 13
+uc Bonghwasan
+end
+
+begin rail seoul-7
+m bupyeong-office-seoul
+e 6
+se 1
+s 4
+se 1
+e 12
+box Daerim
+e 19
+box Isu
+e 3
+ne 3
+e 1
+ne 3
+box G/Gu-office
+ne 2
+e 9
+ne 5
+n 6
+ne 5
+n 7
+box Taereung
+n 3
+box Nowon
+nw 3
+e 4
+uc Jangam
+end
+
+begin rail seoul-8
+m cheonho-seoul 0 -3
+ur Amsa
+s 8
+sw 1
+w 4
+s 3
+se 3
+s 10
+end
+
+begin rail seoul-9
+m gimpo-seoul -2 -3
+ur Gaehwa
+s 1
+se 2
+e 19
+se 6
+e 13
+box Exp.Bus_T
+e 9
+box Seonjeongneung
+ne 3
+end
+
+begin rail incheon-airport
+m gyeyang-incheon
+e 8
+ne 13
+box Digital_M._City digital-media-seoul
+se 9
+e 5
+ne 2
+end
+
+begin rail incheon-airport
+m gyeyang-incheon
+w 19
+sw 1
+s 1
+box ✈Incheon_T1
+s 2
+box ✈Incheon_T2
+end
+
+begin rail ui-sinseol-lrt
+m sinseoldong-seoul
+nw 3
+box Bomun
+nw 2
+w 6
+nw 3
+n 4
+ur Bukhansan_Ui
+end
+
+begin rail seoul-gyeongui-c
+m digital-media-seoul 1 0
+se 9
+e 1
+s 4
+box Namyeong
+se 3
+e 4
+box Ichon
+e 4
+ne 2
+box Oksu
+ne 3
+e 7
+ne 2
+n 6
+ne 1
+e 6
+ne 1
+n 4
+e 1
+n 3
+e 4
+box Sangbong
+e 5
+box Mangu mangu-seoul
+e 5
+box Jipyeong
+end
+
+begin rail seoul-gyeongui-c
+m digital-media-seoul 1 0
+nw 6
+n 1
+box Daegok
+n 5
+box Munsan munsan-seoul
+end
+
+begin rail seoul-gyeongui-c
+m mangu-seoul
+ne 2
+e 6
+dc Pyeongnae-Hopyeong
+e 6
+dc Chuncheon
+end
+
+begin rail seoul-sinbundang
+m migeum-seoul -7 0
+dc Gwanggyo
+e 6
+n 5
+box Pangyo pangyo-seoul
+nw 5
+w 6
+nw 1
+n 5
+end
+
+begin rail korail
+m pangyo-seoul
+e 16
+dc Yeoju
+end
+
+begin rail korail
+m munsan-seoul
+n 14
+box Dorasan dorasan-gyeongui
+end
+
+begin rail korail-light
+m dorasan-gyeongui
+n 8
+box P'anmun panmun-kr
+end
+
+begin rail seoul-ever-line
+m giheung-seoul
+e 7
+ur Everland
+end
+
+begin rail uijeongbu-lrt
+m hoeryong-uijeongbu
+w 5
+nw 1
+n 2
+ne 1
+e 12
+uc Tapseok
+end
+

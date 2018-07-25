@@ -1,0 +1,432 @@
+# 本州
+begin
+m 26 -62
+m 26 -42
+w 204
+sw 32
+w 40
+s 35
+pos $shimonoseki-jp
+e 20
+s 7
+e 29
+n 9
+pos $miyajimaguchi-jp
+e 16
+s 3
+e 15
+n 12
+e 20
+s 12
+e 16
+n 8
+e 46
+s 2
+e 10
+n 2
+pos $sannomiya-jp
+e 15
+s 8
+w 3
+s 18
+e 17
+s 8
+pos $izumisano-jp
+w 25
+s 27
+e 114
+n 8
+e 8
+n 55
+e 14
+s 10
+e 7
+s 17
+e 5
+pos $tokoname-jp
+s 9
+se 4
+e 10
+n 14
+e 4
+s 10
+e 10
+s 10
+w 12
+s 8
+e 67
+n 6
+e 4
+s 14
+e 28
+n 16
+e 22
+s 8
+e 16
+n 10
+e 12
+n 10
+e 20
+s 2
+w 3
+s 2
+e 10
+n 2
+w 5
+n 2
+e 4
+n 14
+w 19
+n 16
+e 16
+s 2
+w 14
+s 11
+e 23
+n 23
+e 18
+s 23
+e 26
+n 32
+e 18
+n 6
+w 6
+n 14
+w 4
+n 9
+nw 14
+n 30
+nw 36
+w 8
+n 13
+e 18
+n 52
+nw 15
+w 15
+n 20
+pos $cape-ooma-jp
+sw 4
+w 11
+s 8
+e 4
+s 5
+w 6
+n 10
+w 9
+s 9
+w 28
+sw 4
+s 18
+w 6
+s 10
+e 6
+s 58
+sw 4
+w 26
+pos $niigata-jp
+sw 32
+w 29
+s 4
+w 32
+n 8
+e 6
+n 8
+w 12
+sw 4
+s 12
+end
+
+# 北海道
+begin
+m $cape-ooma-jp 8 -2
+n 12
+w 4
+n 6
+e 4
+n 8
+se 6
+e 4
+ne 5
+e 6
+se 15
+ne 22
+e 19
+n 8
+w 8
+n 19
+e 8
+n 8
+w 17
+nw 21
+w 8
+s 10
+sw 12
+w 12
+s 14
+w 10
+nw 6
+sw 8
+se 6
+sw 8
+s 17
+w 16
+s 19
+e 8
+n 5
+e 5
+s 5
+e 22
+end
+
+# 四国
+begin
+m $miyajimaguchi-jp 11 5
+s 51
+e 21
+n 9
+e 35
+se 8
+ne 8
+e 22
+n 28
+e 3
+n 8
+w 20
+n 6
+end
+
+# 九州
+begin
+m $shimonoseki-jp 15 2
+pos $moji-jp
+s 16
+e 20
+s 12
+w 8
+s 6
+e 5
+s 62
+w 10
+n 4
+w 8
+s 3
+sw 8
+pos $cape-sata-jp
+n 10
+w 8
+n 6
+e 8
+n 2
+w 10
+s 12
+w 30
+n 6
+e 4
+n 6
+w 6
+n 24
+w 2
+n 4
+e 5
+n 9
+w 5
+n 13
+w 9
+s 8
+e 7
+s 24
+w 6
+n 10
+w 2
+s 10
+w 5
+sw 10
+n 28
+w 3
+n 16
+w 8
+n 15
+e 14
+n 16
+e 8
+s 8
+e 18
+n 3
+w 8
+n 7
+e 11
+n 4
+e 22
+s 4
+end
+
+begin
+m $cape-sata-jp -30 30
+pos $amami-jp
+sw 6
+w 6
+n 6
+e 12
+end
+
+# 沖縄
+begin
+m $amami-jp -40 34
+sw 8
+nw 3
+sw 3
+se 3
+sw 1
+w 6
+s 6
+w 12
+pos $naha-jp
+s 12
+e 14
+n 8
+ne 2
+e 4
+n 4
+ne 4
+e 4
+ne 6
+n 2
+end
+
+# 関西空港
+begin
+m $izumisano-jp -3 -1
+w 8
+n 4
+e 8
+end
+
+# ポートアイランド
+begin
+m $sannomiya-jp 2 1
+s 11
+e 7
+n 11
+end
+
+# 六甲アイランド
+begin
+m $sannomiya-jp 10 1
+s 6
+e 4
+n 6
+end
+
+begin
+m $miyajimaguchi-jp 1 1
+s 7
+e 6
+n 7
+end
+
+begin
+m $niigata-jp -16 -16
+s 8
+sw 8
+n 8
+w 8
+n 8
+ne 8
+s 8
+end
+
+# 淡路島
+begin
+m $sannomiya-jp -12 6
+s 18
+e 8
+n 8
+w 3
+n 10
+end
+
+begin
+m $tokoname-jp -1 1
+s 4
+w 8
+n 4
+end
+
+# 台湾
+begin
+m -460 220
+pos $taoyuan-tw
+sw 20
+s 85
+e 48
+se 10
+s 10
+e 20
+n 100
+ne 5
+nw 5
+n 15
+w 25
+nw 10
+sw 10
+end
+
+# 韓国
+begin
+m $moji-jp -40 -37
+pos $busan-kr
+n 142
+pos $goseong-kr
+w 140
+s 68
+e 30
+s 74
+pos $mokpo-kr
+end
+
+begin
+m $mokpo-kr 0 12
+e 16
+s 12
+w 16
+end
+
+begin
+m $goseong-kr
+nw 40
+ne 20
+n 22
+pos $chabarovsk-ru
+w 23
+s 7
+w 17
+s 8
+w 20
+s 5
+w 60
+s 62
+e 140
+end
+
+# 中国
+begin
+m $chabarovsk-ru
+w 23
+s 7
+w 17
+s 8
+w 20
+s 5
+w 60
+sw 15
+s 15
+w 17
+n 30
+w 6
+sw 34
+s 40
+w *
+n *
+m -300 ^
+end
+

@@ -1,0 +1,294 @@
+begin rail dr-korea-rail
+m panmun-kr
+n 4
+dc Kaesŏng
+n 3
+dc P'yŏngsan pyongsan-kr
+n 2
+nw 1
+w 7
+dc Pongsan
+w 7
+dc Sariwŏn sariwon-kr
+n 4
+box Taedonggang taedonggang-kr
+n 7
+lbox P'yŏngyang/平壌 pyongyang-kr 15 3
+n 7
+box Sŏp'yŏngyang sopyongyang-kr
+n 3
+ur Kalli kalli-kr
+n 3
+ur Mundŏk
+n 5
+nw 1
+w 2
+ur Chŏngju chongju-kr
+w 12
+nw 1
+n 3
+dr Tongrim tongrim-kr
+n 6
+dr Namsinŭiju
+n 6
+box Sinŭiju sinuiju-kr
+end
+
+begin rail dr-korea-rail
+m tongrim-kr
+e 4
+ne 1
+n 4
+nw 1
+w 4
+end
+
+begin rail dr-korea-rail
+m pyongsan-kr
+e 24
+dc Ich'ŏn
+e 25
+end
+
+begin rail dr-korea-rail
+m sariwon-kr
+s 3
+dc Ŭnp'a unpa-kr
+s 6
+ur Changbang changbang-kr
+s 2
+dc Haeju
+w 12
+dc Ongjin
+end
+
+begin rail dr-korea-rail
+m unpa-kr
+w 10
+dc Sugyo sugyo-kr
+w 7
+nw 1
+n 3
+ur Ch'ŏlgwang
+n 10
+end
+
+begin rail dr-korea-rail
+m sugyo-kr
+s 3
+dc Changyŏn
+end
+
+begin rail dr-korea-rail
+m changbang-kr
+e 9
+dc Ŭnbit
+end
+
+begin rail dr-korea-rail
+m pyongyang-kr
+w 12
+box Ch'ilgol chilgol-kr
+w 6
+dc Sillyŏngri
+w 3
+nw 1
+n 7
+dc P'yŏngnam_Onch'ŏn
+end
+
+begin rail dr-korea-rail
+m kalli-kr
+ne 5
+dc Sunch'ŏn sunchon-kr
+e 12
+dc Sinsŏngch'ŏn
+e 47
+dc Kowŏn kowon-kr
+n 4
+dc Hamhŭng hamhung-kr
+ne 4
+lbox Ch'ŏngjin/清津 chongjin 13 3
+ne 6
+n 10
+dc Panjuk panjuk-kr
+e 12
+dc Rajin
+end
+
+begin rail dr-korea-rail
+m taedonggang-kr
+e 16
+ne 1
+n 3
+dc Ch'ŏngryong
+n 25
+nw 1
+w 19
+end
+
+begin rail dr-korea-rail
+m hamhung-kr
+nw 4
+dr Yŏnggwang yonggwang-kr
+n 6
+dc Pujŏnhoban
+end
+
+begin rail dr-korea-rail
+m yonggwang-kr
+nw 4
+dr Sasu
+end
+
+begin rail dr-korea-rail
+m sunchon-kr
+n 8
+dc Kujang
+n 4
+dc Hŭich'ŏn
+n 4
+dc Kanggye
+n 4
+box Manp'o manpo-kr
+end
+
+begin rail dr-korea-rail
+m chongju-kr
+n 4
+dc Kusŏng
+n 4
+dc Sinon
+n 4
+dc Pup'ung
+n 4
+box Ch'ŏngsu chongsu-kr
+end
+
+begin rail dr-korea-rail
+m manpo-kr
+e 30
+dc Hyesan
+e 3
+dc Wiyŏn wiyon-kr
+e 20
+dc Paeg'am paegam-kr
+e 16
+dc Kilju
+end
+
+begin rail dr-korea-rail
+m wiyon-kr
+ne 4
+dc Motka
+end
+
+begin rail dr-korea-rail
+m kowon-kr
+s 9
+dc Wŏnsan
+s 10
+dc Anbyŏn anbyon-kr
+s 10
+dc Sep'o
+s 6
+dc P'yŏnggang
+end
+
+begin rail dr-korea-rail
+m anbyon-kr
+e 20
+se 16
+dc Kŭmgangsan
+end
+
+begin rail dr-korea-rail
+m paegam-kr
+n 12
+dc Musan
+e 16
+end
+
+begin rail dr-korea-rail
+m panjuk-kr
+n 8
+dc Komusan
+n 4
+ne 1
+e 5
+dr Namyang namyang-kr
+e 5
+se 1
+s 4
+ur Hongŭi hongui-kr
+s 4
+ur Mulgol mulgol-kr
+s 4
+end
+
+begin rail dr-korea-rail
+m hongui-kr
+se 2
+e 3
+box Tumangang
+end
+
+begin rail dr-korea-rail
+m mulgol-kr
+ne 2
+end
+
+begin rail dr-korea-rail
+m namyang-kr
+n 3
+box Kukkyŏng kukkyong-kr
+end
+
+##########################################################################
+
+begin rail pyongyang-chinlima
+m pyongyang-kr -4 3
+dc Puhŭng
+e 2
+ne 2
+se 2
+e 4
+n 7
+box Jŏnu
+n 3
+uc Pulgŭnbyŏl
+end
+
+begin rail pyongyang-hyoksin
+m pyongyang-kr -6 -4
+ur Kwangbok
+e 16
+uc Ragwŏn
+end
+
+begin rail pyongyang-tram1
+m chilgol-kr
+se 1
+e 21
+dc Man'gyŏngdae
+end
+
+begin rail pyongyang-tram2
+m pyongyang-kr 10 -1
+dc T'osŏng
+w 2
+s 6
+w 6
+sw 4
+w 9
+ur Munsu
+end
+
+begin rail pyongyang-tram3
+m sopyongyang-kr -3 0
+s 3
+sw 2
+s 11
+box Rangrang
+end
+

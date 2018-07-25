@@ -1,0 +1,923 @@
+################################# 沈阳/哈尔滨 ######################################
+begin rail china-rail
+m sinuiju-kr
+n 5
+lbox 丹东 dandong-liao 8 3
+ne 1
+n 3
+dc 凤凰城 fengshang-liao
+n 3
+nw 1
+box 本溪 benxi-liao
+ne 1
+n 5
+uc 苏家屯 sujiatun-liao
+n 4
+nw 1
+lbox 沈阳 shenyang-liao 8 3
+e 1
+n 4
+w 1
+box 沈阳北 shenyang-n-liao
+e 1
+n 7
+dc 开原 kaiyuan-liao
+n 3
+dc 四平 siping-ji
+n 5
+ne 2
+n 2
+lbox 长春 changchun-ji 8 3
+n 4
+box 长春北 changchunbei-ji
+n 6
+dc 陶赖昭 taolaizhao
+n 1
+nw 1
+n 2
+dc 王岗 wanggang-hei
+n 11
+end
+
+begin rail-h china-rail
+m dandong-liao -1 0
+n 7
+ne 1
+nw 1
+n 7
+box 沈阳南
+n 22
+nw 3
+n 1
+box 长春西
+n 1
+ne 4
+n 11
+e 1
+box 哈尔滨西 harbin-west
+w 1
+n 3
+ne 1
+lbox 哈尔滨 harbin 8 3
+end
+
+begin rail-h china-rail
+m changchun-ji
+e 10
+box ✈龙嘉机场
+e 18
+lbox 吉林 jilin-ji 8 3
+e 10
+se 10
+e 10
+box 敦化
+e 14
+se 6
+e 11
+se 4
+ne 4
+e 2
+box 珲春
+end
+
+begin rail-h china-rail
+m shenyang-liao -1 1
+s 2
+sw 5
+w 5
+sw 1
+s 2
+box 辽阳 liaoyang-liao
+sw 2
+w 5
+box 鞍山西
+w 8
+sw 2
+box 海城西 haichengxi-liao
+sw 3
+box 营口东 yingkoudong-liao
+sw 1
+s 15
+end
+
+begin rail-h china-rail
+m dandong-liao
+w 18
+sw 5
+box 兰店
+sw 10
+lbox 大连北 dalianbei-liao 8 3
+end
+
+begin rail-h china-rail
+m haichengxi-liao
+w 11
+box 盘锦
+w 4
+box 盘锦北 panjinbei-liao
+end
+
+begin rail-h china-rail
+m yingkoudong-liao
+nw 3
+end
+
+begin rail-h china-rail
+m shenyang-n-liao
+w 9
+box 皇姑屯
+w 14
+box 辽中
+w 2
+sw 10
+box 台安
+sw 9
+w 4
+sw 4
+w 5
+sw 4
+box 山海关 shanhaiguan-hebei
+sw 4
+lbox 秦皇岛 qinhuangdao-hebei 8 3
+sw 4
+box 北戴河 beidaihe-hebei
+w 6
+box 滦河
+w 7
+sw 1
+s 4
+box 唐山
+sw 1
+s 5
+sw 1
+w 9
+sw 1
+lbox 天津 tianjin 8 3
+nw 3
+w 2
+nw 2
+w 1
+lbox 天津西 tianjin-west 8 3
+nw 9
+w 7
+box 亦庄
+w 26
+nw 2
+lbox 北京南 beijing-south 8 3
+end
+
+begin rail-h china-rail
+m beijing-south -9 -5
+lbox 北京西 beijing-west 8 3
+nw 2
+w 10
+end
+
+begin rail-h china-rail
+m beijing-west 3 -12
+box 北京北 beijing-north
+n 6
+nw 4
+end
+
+begin rail-h china-rail
+m tianjin-west
+w 10
+sw 2
+s 15
+box 天津南
+s 10
+end
+
+begin rail china-rail
+m liaoyang-liao
+e 18
+ur 田师府
+end
+
+begin rail china-rail
+m fengshang-liao
+e 12
+dc 灌水
+s 5
+box 上河口
+s 4
+end
+
+begin rail china-rail
+m sujiatun-liao
+sw 5
+w 7
+sw 1
+s 2
+sw 2
+w 5
+dc 鞍山
+w 7
+dc 海城 haicheng-liao
+sw 4
+dc 大石桥
+sw 1
+s 11
+sw 2
+s 5
+dc 周水子 zhoushuizi-liao
+s 5
+lbox 大连 dalian-liao 8 3
+end
+
+begin rail china-rail
+m haicheng-liao 0 4
+dc 岫岩
+n 4
+nw 2
+w 9
+ur 渤海
+w 1
+sw 2
+nw 2
+w 2
+ur 甜水
+w 5
+ur 沟帮子
+end
+
+begin rail china-rail
+m panjinbei-liao
+n 2
+end
+
+begin rail china-rail
+m harbin
+e 9
+box 孙家
+e 3
+end
+
+begin rail china-rail
+m shenyang-n-liao
+sw 1
+w 7
+nw 4
+w 2
+ur 马三家
+w 15
+dc 高台山 gaotaishan-liao
+sw 2
+dc 新民
+sw 8
+dc 大虎山
+sw 10
+w 6
+dc 锦州 jinzhou-liao
+s 2
+dc 女儿河
+s 6
+dc 葫芦岛
+s 1
+sw 1
+w 5
+s 2
+sw 6
+w 2
+sw 4
+w 2
+dc 滦县
+w 2
+nw 1
+n 6
+nw 1
+ur 狼窝铺
+w 5
+ur 唐山北 tangshanbei-hebei
+w 17
+ur 蓟县南
+w 3
+ur 三平
+w 2
+nw 4
+w 4
+dc 双桥
+w 4
+box 北京东
+w 14
+lbox 北京 beijing 10 3
+end
+
+begin rail china-rail
+m tangshanbei-hebei
+s 8
+se 1
+end
+
+begin rail china-rail
+m wanggang-hei
+e 4
+box 哈南 harbin-south
+e 3
+ne 1
+n 9
+nw 1
+w 3
+box 哈东
+end
+
+begin rail china-rail
+m shenyang-n-liao
+e 8
+dc 抚顺北
+e 13
+dc 梅河口
+s 19
+ur 通化 tonghua-ji
+s 2
+dc 鸭园 yayuan-ji
+s 3
+box 集安
+s 4
+end
+
+begin rail china-rail
+m tonghua-ji
+w 8
+end
+
+begin rail china-rail
+m yayuan-ji
+e 6
+ne 20
+e 6
+dc 白山市 baishanshi-ji
+s 8
+dc 大栗子
+end
+
+begin rail china-rail
+m baishanshi-ji
+e 10
+dc 白河
+e 11
+dc 和龙 helong-ji
+e 4
+dc 龙井
+e 4
+dc 朝阳川 chaoyangchuan-ji
+e 7
+dc 延吉
+e 7
+box 图们北
+s 3
+box 图们
+s 4
+end
+
+begin rail china-rail
+m helong-ji
+s 8
+dc 南坪镇
+end
+
+begin rail china-rail
+m chaoyangchuan-ji
+s 8
+dc 开山屯
+end
+
+begin rail china-rail
+m zhoushuizi-liao
+w 6
+ur 旅顺西
+end
+
+begin rail china-rail
+m siping-ji
+e 14
+dc 辽源
+e 5
+se 1
+s 4
+dr 东丰
+s 5
+end
+
+begin rail china-rail
+m kaiyuan-liao
+e 13
+ne 1
+n 2
+end
+
+begin rail china-rail
+m changchun-ji
+w 7
+end
+
+begin rail china-rail
+m jinzhou-liao
+n 5
+dc 义县
+n 4
+dc 上园
+n 4
+dc 朝阳
+end
+
+begin rail china-rail
+m gaotaishan-liao
+w 10
+dc 新立屯
+s 10
+end
+
+begin rail china-rail
+m qinhuangdao-hebei
+w 14
+sw 1
+s 6
+dc 唐山东
+s 1
+sw 1
+w 2
+s 3
+dc 七道桥 qidaoqiao-hebei
+s 4
+sw 1
+w 10
+n 4
+nw 1
+box 天津北
+nw 4
+uc 南仓
+n 10
+ur 蓟县 jizhou-tianjin
+n 4
+end
+
+begin rail china-rail
+m tianjin
+w 2
+nw 2
+w 2
+nw 2
+n 1
+ne 4
+end
+
+begin rail china-rail
+m jizhou-tianjin
+sw 2
+end
+
+begin rail china-rail
+m qidaoqiao-hebei
+e 3
+dc 唐山南
+e 3
+dc 古冶
+e 1
+ne 1
+n 3
+end
+
+begin rail china-rail
+m beijing
+sw 3
+w 9
+sw 2
+w 15
+box 丰台
+end
+
+begin rail china-rail
+m beijing-west
+s 4
+sw 1
+end
+
+begin rail china-rail
+m tianjin-west -12 6
+sw 2
+w 10
+dc 霸州西
+w 10
+dc 白洋淀
+w 10
+dc 徐水
+s 12
+dc 保定
+end
+
+################################# 地铁 ######################################
+begin rail shenyang-1
+m shenyang-liao -7 0
+dc 十三号街
+e 12
+box 青年大街
+e 4
+dc 黎明广场
+end
+
+begin rail shenyang-2
+m shenyang-liao 3 -8
+dc 蒲田路
+s 2
+sw 2
+se 4
+s 3
+dc 全运路
+end
+
+begin rail dalian-1
+m dalianbei-liao -2 -3
+ur 姚家
+se 1
+s 4
+sw 2
+s 8
+box 西安路 xianlu-dalian
+s 2
+box 河口 hekou-dalian
+end
+
+begin rail dalian-12
+m hekou-dalian
+w 4
+dc 旅顺新港
+end
+
+begin rail dalian-2
+m xianlu-dalian -4 -2
+box ✈大连机场
+s 1
+se 1
+e 11
+dc 海之韵
+end
+
+begin rail dalian-3
+m dalian-liao -1 0
+n 5
+ne 2
+e 4
+box 开发区 kaifaqu-dalian
+e 3
+uc 金石滩
+end
+
+begin rail dalian-3
+m kaifaqu-dalian
+n 3
+uc 九里
+end
+
+begin rail changchun-1
+m changchun-ji 1 -7
+dc 北环
+s 11
+box 卫星广场
+end
+
+begin rail changchun-3
+m changchun-ji -1 0
+s 4
+e 7
+box 卫星路
+e 4
+dc 长影世纪城
+end
+
+begin rail changchun-4
+m changchunbei-ji
+e 5
+se 1
+s 9
+dc 车场
+end
+
+begin rail harbin-1
+m harbin-south
+n 2
+box 医大二院
+n 7
+box 博物馆
+n 2
+end
+
+begin rail harbin-3
+m harbin-west -4 0
+ur 城乡路
+e 9
+end
+
+begin rail tianjin-1
+m tianjin -8 -8
+ur 刘园
+s 14
+e 15
+dc 财经大学
+end
+
+begin rail tianjin-2
+m tianjin 6 -3
+box ✈滨海机场
+w 3
+sw 3
+w 4
+box 东南角
+w 4
+box 西南角
+w 4
+box 长虹公园
+w 4
+ur 曹庄
+end
+
+begin rail tianjin-3
+m tianjin 0 -8
+ur 小淀
+s 12
+box 和平路
+s 2
+box 营口道
+s 2
+w 12
+box 红旗南路
+w 4
+ur 南站
+end
+
+begin rail tianjin-6
+m tianjin 6 -5
+ur 南孙庄
+w 15
+sw 3
+s 12
+e 14
+s 3
+dc 梅林路
+end
+
+begin rail tianjin-9
+m tianjin
+se 2
+e 8
+dc 东海路
+end
+
+begin rail beijing-1
+m beijing 17 -4
+dc 土桥
+w 3
+box 四惠
+w 19
+box 东单
+w 10
+box 西单
+w 9
+box 军博
+w 5
+box 公主坟
+w 5
+box 苹果园 pingguoyuan-beijing
+end
+
+begin rail beijing-2
+m beijing
+n 4
+box 建国门
+n 2
+box 朝阳门
+n 2
+box 东四十条
+n 2
+box 东直门 dongzhimen-beijing
+nw 2
+w 3
+box 雍和宫
+w 5
+box 鼓楼大街
+w 7
+sw 2
+box 西直门 xizhimen-beijing
+s 2
+box 车公庄
+s 4
+box 复兴门
+s 4
+e 4
+box 宣武门
+e 5
+box 前门
+e 5
+box 崇文门
+e 5
+end
+
+begin rail beijing-10
+m beijing 6 -4
+box 国贸
+s 9
+box 十里河
+s 4
+w 11
+box 宋家庄 songjiazhuang-beijing
+w 10
+box 角门西 jiaomenxi-beijing
+w 14
+n 7
+box 西局 xiju-beijing
+n 2
+box 六里桥
+n 8
+box 慈寿寺 cishousi-beijing
+n 6
+box 巴沟 bagou-beijing
+e 5
+box 海淀黄庄
+e 14
+box 北土城
+e 5
+box 惠新西街南
+e 5
+box 芍药居
+e 6
+s 8
+box 呼家楼
+s 2
+end
+
+begin rail beijing-4
+m jiaomenxi-beijing 0 5
+dc 天宫院
+n 3
+box 公益西桥
+n 9
+box 菜市口
+n 10
+box 平安里
+n 2
+w 9
+box 国家图书馆 guojiatushuguan-beijing
+n 6
+box 西苑 xiyuan-beijing
+w 7
+ur 安河桥北
+end
+
+begin rail beijing-5
+m songjiazhuang-beijing
+n 15
+box 东四
+n 10
+box 大屯路东
+n 8
+dc 天通苑北
+end
+
+begin rail beijing-yizhuang
+m songjiazhuang-beijing
+s 1
+se 1
+e 15
+box 次渠
+e 1
+ne 1
+n 3
+end
+
+begin rail beijing-6
+m cishousi-beijing -5 0
+ur 海淀五路居
+e 10
+box 白石桥南
+e 14
+box 南锣鼓巷 nanluoguxiang-beijing
+e 3
+s 2
+e 24
+ur 潞城
+end
+
+begin rail beijing-7
+m beijing-west
+se 2
+e 17
+box 磁器口
+e 2
+se 1
+e 16
+dc 焦化厂
+end
+
+begin rail beijing-8
+m nanluoguxiang-beijing
+n 8
+box 奥运公园
+n 6
+w 10
+end
+
+begin rail beijing-9
+m guojiatushuguan-beijing
+s 10
+w 10
+s 8
+box 郭公庄 guogongzhuang-beijing
+end
+
+begin rail beijing-13
+m xizhimen-beijing
+n 4
+box 知春路 zhichunlu-beijing
+n 6
+box 西二旗 xi_erqi-beijing
+e 9
+box 霍营
+e 5
+box 立水桥
+e 5
+s 4
+box 望京西
+s 6
+end
+
+begin rail beijing-14
+m xiju-beijing
+w 5
+box 七里庄
+w 5
+dc 张郭庄
+end
+
+begin rail beijing-14
+m beijing-south
+e 10
+box 蒲黄榆
+e 15
+n 2
+box 九龙山
+n 7
+box 大望路
+n 2
+box 金台路
+n 10
+box 望京
+n 3
+dc 善各庄
+end
+
+begin rail beijing-15
+m zhichunlu-beijing 1 -2
+uc 清华东路西
+e 38
+dc 俸伯
+end
+
+begin rail beijing-16
+m xiyuan-beijing
+n 3
+w 7
+ur 北安河
+end
+
+begin rail beijing-s1
+m pingguoyuan-beijing
+w 5
+dc 石厂
+end
+
+begin rail beijing-airport
+m dongzhimen-beijing
+e 4
+ne 2
+box 三元桥
+e 10
+box ✈3号航站楼
+n 2
+box ✈2号航站楼
+end
+
+begin rail beijing-changping
+m xi_erqi-beijing
+n 2
+box 朱辛庄
+n 5
+dc 昌平西山口
+end
+
+begin rail beijing-fangshan
+m guogongzhuang-beijing
+s 2
+box 阎村东
+w 5
+dc 饶乐府
+n 2
+ur 周口店镇
+end
+
+begin rail beijing-xijiao
+m bagou-beijing
+w 5
+dc 香山
+end
+

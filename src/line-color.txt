@@ -1,0 +1,294 @@
+########################### 日本 #############################
+# JR
+jr-hokkaido #2cb431
+jr-hokkaido-light #9cd4a1
+jr-east #0c8c11
+jr-east-light #8ccc91
+jr-central #ff7000
+jr-west #0072bc
+jr-shikoku #1cadca
+jr-kyushu #ff0000
+
+# 大手私鉄
+hankyu #702029
+kintetsu #cc0033
+keihan #5ba094
+hanshin #ff4500
+nankai #2085af
+meitetsu #d12027
+odakyu #2288cc
+keio #dd0077
+tokyu #da0442
+keikyu #cc0033
+seibu #0099cc
+toubu #005bac
+keisei #2176c3
+nishitetsu #003399
+
+# 私鉄
+randen #00c000
+eizan #800000
+wakayama #dc143c
+sanyo #fa2b08
+kobe-dentetsu #dd0033
+sangi #ffd400
+hojo #40f060
+asunarou #00a0e8
+bataden #ffff00
+ohmi #ffc000
+echizen-mikuni #0066ff
+echizen-eiheiji #ff6600
+fukui #008000
+hiroden #dd2424
+astram #ffa500
+toyotetsu #006666
+toyama-chitetsu #cc3366
+entetsu #c32829
+izuhakone #3333ff
+hakone-tozan #f15a22
+enoden #005c3f
+chichibu #0000cc
+kotoden #ffd400
+iyotetsu #e6611c
+tosaden #008000
+sotetsu #ee7b35
+shonan-monorail #ff0000
+tsukuba-ex #000084
+shin-keisei #ef59a1
+narita-airport #ff8620
+kanto-tetsudo #0000ff
+jomo-tetsudo #40e0d0
+yagan-tetsudo #009933
+aizu-tetsudo #ff9900
+konan-tetsudo #ffa500
+tsugaru-tetsudo #ffa500
+fujikyu #0033dd
+matsumoto #465daa
+nagano-dentetsu #ff0000
+tama-monorail #fa6c1f
+chikuho-dentetsu #e30075
+kumamoto-dentetsu #124dae
+shimabara #ffff22
+
+# 第3セクター
+tango #1e6035
+yourou #228c22
+shigaraki #9acd32
+iga #4b0082
+chizu #112299
+ibara #9acd32
+ir-ishikawa #00a7e3
+toyama-tetsudo #00a556
+echigo-nihonkai #3782bd
+echigo-myoko #35c98e
+nagaragawa #ff1493
+tarumi #00b2e5
+tosa-kuroshio #00bfff
+oigawa #ff0000
+toyama-lr #00008b
+manyo-line #ff0000
+shinano #f0a401
+kita-shinano #999966
+hokuhoku #e8204e
+yamagata-tetsudo #ff69b4
+donan-isaribi #246dac
+amagi #00cc33
+isumi-tetsudo #ffd400
+kashima-rinkai #ff0000
+kominato-tetsudo #ff6347
+sanriku-tetsudo #ff0000
+iwate-ginga #03459a
+aoimori #33cbf4
+kumagawa #00ccff
+hisatsu-orange #ffa500
+
+# 地下鉄・市電
+kyoto-karasuma #00a947
+kyoto-tozai #ff0000
+
+osaka-tanimachi #522886
+osaka-imazato #ee7b1a
+osaka-midosuji #e5171f
+osaka-nagahori #a9cc51
+osaka-yotsubashi #00389a
+osaka-sennichimae #e44d93
+osaka-chuo #019a66
+osaka-nanko #00a0de
+osaka-monorail #000080
+
+kobe-kaigan #0388c0
+kobe-yamate #01af98
+
+nagoya-higashiyama #ffb700
+nagoya-mejo #8f76d6
+nagoya-tsurumai #009bbf
+nagoya-sakura #ad443c
+nagoya-kami-ida #e77b9f
+nagoya-aonami #334fa0
+nagoya-gw-bus #3c459a
+aichi-kanjo #2536a1
+
+okayama-higashiyama #244f9b
+okayama-seikibashi #b264b4
+
+yokohama-blue #006bf0
+yokohama-green #40cc40
+yokohama-mm #0067c0
+yokohama-kanazawa #f68b1e
+
+tokyo-ginza #ec9a14
+tokyo-marunouchi #ec0224
+tokyo-hibiya #9baaad
+tokyo-tozai #14aaec
+tokyo-nanboku #04aaac
+tokyo-fukutoshin #bc5624
+tokyo-asakusa #ec568c
+tokyo-chiyoda #20b964
+tokyo-hanzomon #9c46ac
+tokyo-yurakucho #dcba24
+tokyo-mita #0476bc
+tokyo-shinjuku #84da74
+tokyo-oedo #cc0274
+tokyo-rinkai #00418e
+tokyo-monorail #003686
+tokyo-arakawa #ee86a7
+
+saitama-kosoku #345caa
+saitama-new-shuttle #ffff00
+
+chiba-toyo-kousoku #00b16b
+chiba-monorail #2843ba
+
+fukuoka-kuko #ee5511
+fukuoka-hakozaki #0077cc
+fukuoka-nanakuma #00936b
+
+sendai-nanboku #72bc4a
+sendai-tozai #90d7ec
+sendai-airport #2a5caa
+
+sapporo-nanboku #07b9b1
+sapporo-tozai #faa932
+sapporo-toho #2294d1
+
+kumamoto-tram #008000
+
+yui-rail #ff0000
+
+########################### 台湾 #############################
+taiwan-hsl #db5426
+taiwan-rail #1a007f
+taiwan-alishan #9fcc54
+
+taipei-wenhu #c48c31
+taipei-tamsui #e3002c
+taipei-songshan #008659
+taipei-bannan #0070bd
+taipei-zhonghe #f8b61c
+taipei-maokong #77bc1f
+
+taoyuan-airport #8e47ad
+
+kaohsiung-red #ea0437
+kaohsiung-orange #ffa500
+kaohsiung-lr #00b14f
+
+########################### 韓国 #############################
+korail #0066b3
+korail-light #a0c6e3
+suseo-hsrl #c7197d
+
+# 地下鉄・市電
+busan-1 #f06a00
+busan-2 #81bf48
+busan-3 #bb8c00
+busan-4 #217dcb
+busan-5 #d6406a
+busan-bgl #8451a0
+
+daegu-1 #d93f5c
+daegu-2 #00aa80
+daegu-3 #ffb300
+
+gwangju-1 #009088
+
+daejeon-1 #007448
+
+incheon-1 #f06a00
+incheon-2 #8cadCB
+incheon-lr #fe9700
+incheon-airport #3681b7
+
+seoul-1 #0d3692
+seoul-2 #33a23d
+seoul-3 #fe5b10
+seoul-4 #32a1c8
+seoul-5 #8b50a4
+seoul-6 #c55c1d
+seoul-7 #54640d
+seoul-8 #f51361
+seoul-9 #aa9872
+seoul-gyeongui-c #72c7a6
+seoul-bundang #e0a134
+seoul-sinbundang #bb1833
+seoul-ever-line #4ea346
+seoul-ui-sinseol #797979
+ui-sinseol-lrt #b7c452
+uijeongbu-lrt #ff850d
+
+dr-korea-rail #808080
+pyongyang-chinlima #ff0000
+pyongyang-hyoksin #008000
+pyongyang-tram1 #800080
+pyongyang-tram2 #ffa500
+pyongyang-tram3 #008080
+
+########################### 中国 #############################
+# 国铁
+#china-rail #e60012
+#china-rail #808080
+china-rail #b34049
+china-rail-light #d38089
+
+# 地铁
+shenyang-1 #e5001c
+shenyang-2 #fec010
+
+dalian-1 #008000
+dalian-2 #0000ff
+dalian-3 #ff0000
+dalian-12 #d6006e
+
+changchun-1 #ff0000
+changchun-3 #009342
+changchun-4 #7030a0
+
+harbin-1 #9f0002
+harbin-3 #fd8609
+
+tianjin-1 #bd0016
+tianjin-2 #ece114
+tianjin-3 #128bbe
+tianjin-6 #9f216f
+tianjin-9 #063a91
+
+beijing-1 #a8353a
+beijing-2 #004a88
+beijing-4 #008996
+beijing-5 #af0061
+beijing-6 #b78500
+beijing-7 #ffc66e
+beijing-8 #009878
+beijing-9 #94d600
+beijing-10 #008fbf
+beijing-13 #f6da40
+beijing-14 #cc9a8e
+beijing-15 #673278
+beijing-16 #6ba53a
+beijing-s1 #a65a2a
+beijing-airport #a292b3
+beijing-yizhuang #d6006e
+beijing-changping #de85bb
+beijing-fangshan #dc6016
+beijing-xijiao #e1261c
+

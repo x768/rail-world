@@ -1,0 +1,2211 @@
+############################# 近畿〜中部(豊橋以西) ###################################
+
+begin rail hankyu
+m 4 -6
+dr 河原町
+w 4
+box 烏丸/四条
+w 5
+box 大宮 omiya-kyoto
+w 5
+box 西院
+w 1
+sw 3
+dc 桂 katsura-kyoto
+s 6
+ur 長岡天神
+s 4
+sw 1
+w 2
+dc 高槻市
+w 2
+dc 茨木市
+w 3
+box 南茨木
+w 12
+sw 1
+s 2
+sw 1
+w 2
+box 淡路 awaji
+w 6
+box 南方
+w 4
+box 十三 juso-osaka
+s 4
+e 2
+end
+
+begin rail hankyu
+m juso-osaka
+n 12
+dc 石橋 ishibashi-osaka
+n 3
+box 川西能勢口 noseguchi-osaka
+w 8
+dc 雲雀丘花屋敷
+w 6
+box 宝塚
+s 7
+dc 仁川
+s 13
+end
+
+begin rail hankyu
+m noseguchi-osaka
+n 3
+ur 山下 yamashita-osaka
+n 3
+ur 日生中央
+end
+
+begin rail hankyu
+m yamashita-osaka
+e 4
+dc 妙見口
+end
+
+begin rail hankyu
+m katsura-kyoto
+nw 6
+w 2
+dr 嵐山
+end
+
+begin rail hankyu
+m ishibashi-osaka
+e 4
+dc 箕面
+end
+
+begin rail hankyu
+m awaji 0 -12
+uc 北千里
+s 3
+box 山田
+s 11
+box 天六 tenroku-osaka
+s 6
+box 南森町
+s 8
+box 堺筋本町
+s 2
+box 長堀橋
+s 3
+box 日本橋
+s 3
+box 恵美須町 ebisucho-osaka
+s 4
+box 動物園前
+s 1
+sw 1
+w 5
+box 天下茶屋
+end
+
+begin rail hankyu
+m juso-osaka
+w 11
+uc 塚口 tsukaguchi-hyogo
+w 3
+box 西宮北口 nishinomiya-hyogo
+w 4
+uc 夙川 shukugawa-hyogo
+w 4
+sw 2
+w 2
+nw 3
+w 5
+box 新開地 shinkaichi-hyogo
+end
+
+begin rail hankyu
+m shukugawa-hyogo
+n 2
+uc 甲陽
+end
+
+begin rail hankyu
+m tsukaguchi-hyogo
+n 8
+dc 伊丹
+end
+
+begin rail keihan
+m 6 -15
+box 出町柳 demachiyanagi
+s 9
+dr 祇園四条
+s 10
+box 東福寺
+sw 6
+s 4
+dc 中書島 chushojima
+w 3
+box 八幡市 yawata-kyoto
+w 3
+sw 5
+dc 樟葉
+sw 3
+w 2
+dc 枚方市 hirakata-osaka
+w 6
+box 門真市 kadoma-osaka
+w 3
+box 関目
+w 3
+box 野江
+w 3
+box 京橋
+w 3
+box 天満橋 tenmabashi-osaka
+sw 2
+w 2
+box 北浜
+w 6
+box 淀屋橋
+end
+
+begin rail keihan
+m tenmabashi-osaka
+w 15
+dr 中之島
+end
+
+begin rail keihan
+m hirakata-osaka
+s 4
+dc 私市
+end
+
+begin rail keihan
+m chushojima
+e 6
+se 1
+s 3
+dr 宇治
+end
+
+begin rail keihan
+m yawata-kyoto
+s 2
+dc 男山山上
+end
+
+begin rail eizan
+m demachiyanagi
+n 3
+dc 宝ケ池 takaragaike-kyoto
+n 5
+dc 鞍馬 kurama-kyoto
+end
+
+begin rail eizan
+m takaragaike-kyoto
+e 4
+box 八瀬 yase-kyoto
+end
+
+begin rail others
+m kurama-kyoto 0 -2
+dc 山門
+n 2
+dc 多宝塔
+end
+
+begin rail eizan
+m yase-kyoto 0 -2
+box C八瀬 yase-kyoto
+e 5
+box C比叡 cable-hiei
+end
+
+begin rail-l others
+m cable-hiei 0 2
+box RW比叡 cable-hiei
+e 4
+dr 比叡山頂
+end
+
+begin rail randen
+m -5 -4
+box 四条大宮 omiya-kyoto
+w 4
+nw 1
+n 2
+nw 2
+w 3
+ur 帷子ノ辻 katabiranotsuji
+w 2
+nw 3
+w 2
+dr 嵐山
+end
+
+begin rail randen
+m katabiranotsuji
+n 8
+ne 1
+e 4
+uc 北野白梅町
+end
+
+begin rail kyoto-karasuma
+m kyoto 0 5
+box 竹田
+n 17
+box 烏丸御池
+n 3
+dc 今出川
+n 3
+dc 北大路
+n 3
+dc 国際会館
+end
+
+begin rail kyoto-tozai
+m -13 -12
+dc 太秦天神川
+e 5
+e 14
+box 三条
+e 3
+se 1
+s 7
+box 御陵 misasagi-kyoto
+s 12
+end
+
+begin rail keihan
+m misasagi-kyoto
+se 1
+s 2
+sw 1
+se 1
+e 6
+ne 4
+uc 浜大津 hamaotsu-shiga
+n 4
+box 大津京
+n 3
+dr 坂本 sakamoto-shiga
+end
+
+begin rail keihan
+m hamaotsu-shiga
+e 4
+se 1
+s 6
+dc 石山寺
+end
+
+begin rail-l others
+m omi-hachiman -3 0
+dr 公園前
+n 2
+dr 八幡城址
+end
+
+begin rail keihan
+m sakamoto-shiga -2 0
+dr C坂本
+n 2
+dr C延暦寺
+end
+
+begin rail ohmi
+m maibara-shiga
+sw 2
+s 1
+sw 1
+e 5
+se 1
+s 1
+dc 高宮 takamiya-shiga
+s 4
+dc 八日市
+s 18
+sw 1
+w 8
+end
+
+begin rail shigaraki
+m kibugawa-shiga
+w 6
+dc 信楽
+end
+
+begin rail ohmi
+m takamiya-shiga
+e 4
+dc 多賀大社前
+end
+
+begin rail ohmi
+m omi-hachiman
+e 6
+end
+
+begin rail osaka-monorail
+m kadoma-osaka
+n 8
+box 大日 dainichi-osaka
+n 10
+nw 1
+w 7
+uc 万博記念公園 banpaku-osaka
+w 12
+box 千里中央 senri-chuo
+w 6
+box 蛍池
+w 4
+box ✈大阪空港
+end
+
+begin rail osaka-monorail
+m banpaku-osaka
+n 3
+uc 彩都西
+end
+
+begin rail kintetsu
+m kyoto -1 0
+s 4
+se 1
+s 1
+se 2
+box 丹波橋
+se 1
+s 10
+dc 大久保
+s 2
+dc 新田辺
+s 2
+dc 新祝園
+s 5
+box 西大寺
+e 7
+dc 近鉄奈良
+end
+
+begin rail hanshin
+m umeda-osaka 0 1
+w 11
+dc 大物 daimotsu-hyogo
+w 2
+dr 武庫川 mukogawa-hyogo
+w 3
+box 今津
+w 5
+box 魚崎
+w 2
+nw 3
+w 3
+nw 2
+w 3
+nw 1
+w 10
+dc 須磨
+w 4
+ur 須磨浦公園 sumaura-koen
+w 4
+dc 垂水
+w 3
+sw 3
+w 6
+dc 東二見
+w 3
+dc 高砂
+w 3
+dc 大塩
+w 3
+dc 飾磨 shikama-hyogo
+n 5
+end
+
+begin rail hanshin
+m shikama-hyogo
+w 3
+dc 山陽網干
+end
+
+begin rail-l hanshin
+m sumaura-koen
+n 4
+dc 鉢伏山上
+n 2
+dc せっつ
+end
+
+begin rail hanshin
+m daimotsu-hyogo
+s 11
+box 九条
+s 2
+box ドーム前
+se 2
+e 3
+s 1
+se 1
+e 6
+end
+
+begin rail hanshin
+m mukogawa-hyogo
+s 2
+dr 団地前
+end
+
+begin rail osaka-midosuji
+m senri-chuo
+s 4
+w 2
+s 21
+box 本町
+s 2
+box 心斎橋
+s 4
+lbox 難波 nanba-osaka 10 3
+sw 2
+s 3
+se 1
+e 8
+ne 2
+e 1
+se 3
+s 6
+box 長居
+s 4
+box 中もず nakamozu-osaka
+end
+
+begin rail nankai
+m nakamozu-osaka
+s 4
+dc 和泉中央
+end
+
+begin rail kintetsu
+m nanba-osaka
+e 5
+ne 1
+se 1
+e 2
+ne 1
+se 1
+e 1
+ne 1
+se 2
+e 6
+uc 布施 fuse-osaka
+e 7
+ne 1
+ur 東花園
+ne 6
+box 生駒 ikoma-nara
+e 7
+dc 学園前
+e 5
+s 4
+dc 近鉄郡山
+s 5
+dc 平端 hirahata-nara
+s 4
+dc 田原本
+s 4
+box 大和八木 yamato-yagi
+s 4
+box 橿原神宮前
+s 2
+sw 7
+box 吉野口
+e 8
+dc 吉野 yoshino-nara
+end
+
+begin rail-l others
+m yoshino-nara 0 2
+dc 千本口
+s 2
+dc 吉野山
+end
+
+begin rail kintetsu
+m ikoma-nara
+s 4
+dr 生駒山上
+end
+
+begin rail kintetsu
+m ikoma-nara
+se 2
+s 11
+end
+
+begin rail kintetsu
+m oji-nara
+e 10
+end
+
+begin rail kintetsu
+m hirahata-nara
+e 8
+end
+
+begin rail kintetsu
+m yamato-yagi
+e 11
+dc 榛原
+e 2
+dc 名張
+e 4
+box 伊賀神戸
+e 13
+dr 伊勢中川 ise-nakagawa
+se 10
+box 伊勢市
+s 3
+dr 宇治山田
+s 3
+box 鳥羽
+s 3
+dc 鵜方
+s 3
+dc 賢島
+end
+
+begin rail kintetsu
+m ise-nakagawa
+ne 8
+n 4
+dc 伊勢若松 ise-wakamatsu
+n 16
+box 四日市 yokkaichi-mie
+n 3
+dc 富田
+n 1
+ne 1
+e 4
+ne 2
+se 2
+e 3
+dc 弥富
+e 4
+dc 蟹江
+e 2
+ne 2
+se 1
+e 6
+end
+
+begin rail kintetsu
+m ise-wakamatsu
+w 4
+dr 鈴鹿市
+w 2
+dr 平田町
+end
+
+begin rail kintetsu
+m yokkaichi-mie
+nw 4
+w 4
+dc 湯の山温泉
+end
+
+begin rail asunarou
+m yokkaichi-mie
+sw 2
+dc 日永 hinaga-mie
+sw 3
+w 3
+dc 内部
+end
+
+begin rail asunarou
+m hinaga-mie
+w 6
+dc 西日野
+end
+
+begin rail sangi
+m tomida-mie
+nw 3
+n 6
+dc 西藤原
+end
+
+begin rail sangi
+m kuwana-mie
+nw 2
+n 6
+ur 阿下喜
+end
+
+begin rail yourou
+m kuwana-mie
+n 6
+dc 下深谷
+n 3
+dc 多度
+n 3
+dc 駒野
+n 3
+dc 養老
+n 8
+dc 西大垣
+n 14
+dc 揖斐
+end
+
+begin rail kintetsu
+m fuse-osaka
+s 1
+se 2
+e 1
+box 俊徳道
+e 3
+dc 河内山本 kawachi-yamamoto
+s 2
+dc 高安
+s 2
+dc 国分
+s 2
+se 1
+e 10
+uc 五位堂
+e 3
+uc 大和高田
+e 6
+end
+
+begin rail kintetsu
+m tennoji-osaka 0 1
+e 5
+se 1
+s 5
+se 1
+e 7
+box 道明寺 domyoji-osaka
+s 3
+box 古市 furuichi-osaka
+e 13
+ur 尺土 shakudo-osaka
+e 10
+end
+
+begin rail kintetsu
+m kawachi-yamamoto
+e 4
+box 信貴山口
+e 4
+dr 高安山
+end
+
+begin rail kintetsu
+m domyoji-osaka
+n 2
+end
+
+begin rail kintetsu
+m shakudo-osaka
+s 2
+se 3
+box 御所 goze
+end
+
+begin rail-l kintetsu
+m goze -3 0
+dr 葛城登山口
+w 2
+dr 葛城山上
+end
+
+begin rail kintetsu
+m furuichi-osaka
+s 2
+end
+
+begin rail osaka-tanimachi
+m dainichi-osaka
+w 3
+box 太子橋 taishibashi-imaichi
+w 17
+sw 1
+s 4
+se 1
+e 7
+se 1
+s 7
+box 谷四
+s 2
+box 谷六
+s 3
+box 谷九
+s 8
+box 阿倍野
+s 1
+se 1
+e 8
+dc 八尾南
+end
+
+begin rail osaka-yotsubashi
+m umeda-osaka
+s 3
+box 北新地
+s 8
+se 1
+s 2
+sw 1
+s 4
+sw 1
+s 4
+sw 2
+w 2
+box 住之江公園
+end
+
+begin rail osaka-imazato
+m taishibashi-imaichi 0 -2
+uc 井高野
+s 12
+box 蒲生4 gamo4-osaka
+s 2
+box 鴫野
+s 2
+box 緑橋
+s 5
+box 今里
+end
+
+begin rail osaka-sennichimae
+m noda-osaka
+s 11
+box 阿波座
+s 2
+box 西長堀
+s 2
+box 桜川
+se 1
+e 26
+s 3
+dc 南巽
+end
+
+begin rail osaka-chuo
+m bentencho-osaka -2 8
+box 宇宙広場 cosmo-osaka
+n 7
+ne 1
+e 40
+box 高井田
+e 3
+box 長田 nagata-osaka
+end
+
+begin rail osaka-nanko
+m cosmo-osaka
+s 6
+box フェリー
+e 12
+end
+
+begin rail osaka-nagahori
+m taisho-osaka
+n 2
+e 24
+ne 1
+n 6
+ne 1
+se 2
+e 7
+dc 門真南
+end
+
+begin rail kintetsu
+m nagata-osaka
+e 10
+n 2
+uc 登美ヶ丘
+end
+
+begin rail nankai
+m nanba-osaka
+s 4
+s 6
+dr 岸里玉出 tamade-osaka
+s 6
+dr 堺
+s 4
+box 羽衣 hagoromo-osaka
+s 2
+sw 1
+w 1
+ur 泉大津
+w 2
+ur 春木
+w 2
+ur 岸和田
+w 2
+box 貝塚 kaizuka-osaka
+w 4
+ur 泉佐野 izumisano-osaka
+w 5
+ur 尾崎
+w 5
+ur みさき公園 misaki-koen
+s 2
+dc 紀ノ川 kinokawa-wakayama
+s 4
+box 和歌山市
+w 4
+dr 和歌山港
+end
+
+begin rail nankai
+m misaki-koen
+w 4
+dr 多奈川
+end
+
+begin rail nankai
+m kinokawa-wakayama
+w 4
+dr 加太
+end
+
+begin rail nankai
+m izumisano-osaka
+n 4
+box りんくうタウン
+n 4
+box ✈関西空港
+end
+
+begin rail nankai
+m hagoromo-osaka -3 0
+w 2
+ur 高師浜
+end
+
+begin rail nankai
+m tamade-osaka -8 -9
+dr 汐見橋
+s 3
+se 2
+e 1
+se 4
+e 1
+e 5
+se 1
+s 4
+dr 堺東
+s 1
+se 1
+e 2
+box 三国ケ丘
+e 8
+dc 北野田
+e 3
+dc 金剛
+e 4
+box 河内長野
+s 5
+dc 林間田園
+s 7
+box 橋本
+s 3
+box 極楽橋
+s 2
+dr 高野山
+end
+
+begin rail others
+m ebisucho-osaka
+w 2
+sw 1
+s 10
+box 住吉
+s 3
+dr 浜寺駅
+end
+
+begin rail others
+m tennoji-osaka
+sw 1
+s 7
+sw 1
+w 5
+end
+
+begin rail others
+m sumiyoshi-hyogo
+s 6
+dc 島北口
+s 2
+dc 海公園
+end
+
+begin rail others
+m sannomiya-hyogo
+s 6
+dr 中公園 nakakoen-hyogo
+s 4
+dr 京コン前
+s 5
+box ✈神戸空港
+end
+
+begin rail others
+m nakakoen-hyogo
+e 2
+se 1
+s 1
+sw 1
+w 2
+end
+
+begin rail others
+m kaizuka-osaka
+s 3
+dc 水間観音
+end
+
+begin rail wakayama
+m wakayama
+se 2
+e 2
+dc 伊太祈曽
+e 2
+dc 貴志
+end
+
+begin rail kobe-dentetsu
+m shinkaichi-hyogo
+n 13
+ur 鈴蘭台 suzurandai-hyogo
+e 6
+box 谷上
+e 4
+uc 有馬口 arimaguchi-hyogo
+e 2
+dc 有馬温泉
+end
+
+begin rail kobe-dentetsu
+m arimaguchi-hyogo
+n 7
+dr 横山 yokoyama-hyogo
+e 8
+end
+
+begin rail kobe-dentetsu
+m yokoyama-hyogo
+n 3
+dr ウッディタウン中央
+end
+
+begin rail kobe-dentetsu
+m suzurandai-hyogo
+w 6
+dc 西鈴蘭台
+w 14
+dc 緑が丘駅
+w 7
+dc 小野
+w 4
+end
+
+begin rail hojo
+m ao-hyogo
+w 4
+dc 北条町
+end
+
+begin rail others
+m shin-kobe 7 -3
+dc 六甲C下
+n 2
+dc 六甲山上 rokko-sanjo-hyogo
+end
+
+begin rail-l others
+m rokko-sanjo-hyogo 0 -2
+dc 六甲山頂
+n 2
+dc 有馬温泉
+end
+
+begin rail others
+m shin-kobe 3 -3
+dc 摩耶C
+n 2
+dc 星の駅 hoshi-hyogo
+end
+
+begin rail-l others
+m hoshi-hyogo
+n 2
+dc 虹の駅
+end
+
+begin rail-l others
+m himeji -1 -3
+ur 山麓
+n 2
+ur 書写山頂
+end
+
+begin rail-l others
+m amanohashidate 0 1
+dc ゲート
+s 2
+dc ビューランド
+end
+
+begin rail others
+m amanohashidate 0 -3
+dc 府中
+n 2
+dc 笠松
+end
+
+begin rail kobe-yamate
+m shin-kobe
+s 5
+w 2
+nw 3
+w 4
+box 湊川
+w 2
+sw 1
+s 4
+w 2
+n 3
+box 板宿
+n 8
+dr 西神中央
+end
+
+begin rail kobe-kaigan
+m shin-nagata
+s 2
+se 1
+e 4
+ne 1
+n 1
+ne 1
+se 1
+e 5
+end
+
+begin rail others
+m shin-kobe
+n 6
+nw 3
+end
+
+begin rail-l others
+m shin-kobe -1 -1
+ur 山麓
+n 2
+ur ハーブ園
+end
+
+begin rail-l others
+m ohmi-maiko -2 -1
+ur 山麓
+w 2
+ur びわ湖バレイ
+end
+
+begin rail fukui
+m takefu-fukui -2 0
+ur 武生
+n 2
+ur 西鯖江
+n 4
+ur 大名町
+n 4
+box 田原町 tawaramachi-fukui
+end
+
+begin rail fukui
+m fukui
+w 2
+end
+
+begin rail echizen-mikuni
+m tawaramachi-fukui -2 -4
+ur 三国港
+s 3
+se 1
+e 5
+end
+
+begin rail echizen-eiheiji
+m fukui
+ne 2
+n 2
+dc 福井口
+e 3
+dc 永平寺口
+e 6
+dc 勝山
+end
+
+begin rail others
+m nishi-kanazawa
+sw 2
+s 2
+dr 額住宅前
+s 2
+dr 鶴来 tsurugi-ishikawa
+end
+
+begin rail others
+m nishi-kanazawa
+s 3
+uc 野町
+end
+
+begin rail others
+m kanazawa
+n 6
+dc 内灘
+end
+
+begin rail others
+m nanao-ishikawa
+ne 1
+n 6
+dc 穴水
+end
+
+begin rail-l others
+m tsurugi-ishikawa 0 2
+dr 獅子吼高原
+e 2
+dr スカイ獅子吼
+end
+
+begin rail manyo-line
+m takaoka-toyama
+nw 1
+n 3
+ne 1
+e 1
+uc 六渡寺
+e 3
+uc 越ノ潟
+end
+
+begin rail toyama-lr
+m toyama
+n 6
+dr 岩瀬浜
+end
+
+begin rail toyama-chitetsu
+m toyama 1 0
+s 7
+dc 丸の内 marunouchi-toyama
+e 3
+dc 西町 nishimachi-toyama
+n 2
+w 3
+end
+
+begin rail toyama-chitetsu
+m marunouchi-toyama
+w 2
+dc 大学前
+end
+
+begin rail toyama-chitetsu
+m nishimachi-toyama
+s 4
+end
+
+begin rail toyama-chitetsu
+m toyama
+se 3
+e 3
+dc 稲荷町 inaricho-toyama
+e 3
+dc 寺田 terada-toyama
+e 2
+dc 上市
+n 4
+nw 1
+ne 1
+n 1
+e 7
+se 1
+s 3
+box 宇奈月 unazuki-toyama
+end
+
+begin rail toyama-chitetsu
+m inaricho-toyama
+s 7
+sw 1
+w 1
+dr 南富山
+s 1
+se 1
+e 4
+end
+
+begin rail toyama-chitetsu
+m terada-toyama
+s 10
+dr 岩峅寺
+s 1
+se 1
+e 2
+dr 有峰口
+e 3
+box 立山 tateyama-toyama
+end
+
+begin rail others
+m tateyama-toyama
+e 3
+dr 美女平
+end
+
+begin rail others
+m unazuki-toyama
+s 5
+dr 欅平
+end
+
+begin rail iga
+m iga-ueno
+s 3
+dc 上野市
+s 4
+dc 茅町
+s 4
+dc 猪田道
+s 4
+dc 丸山
+s 4
+end
+
+begin rail others
+m tsu-mie
+n 10
+dc 鈴鹿
+n 4
+end
+
+begin rail others
+m gobo-wakayama
+s 2
+dr 紀伊御坊
+s 2
+dr 西御坊
+end
+
+begin rail meitetsu
+m gifu 3 -2
+ur 名鉄岐阜
+s 2
+sw 1
+s 5
+dr 笠松 kasamatsu-gifu
+s 5
+se 1
+sw 1
+s 4
+sw 1
+ur 国府宮
+s 3
+ur 須ヶ口 sukaguchi-aichi
+s 4
+se 1
+e 2
+s 4
+end
+
+begin rail meitetsu
+m sukaguchi-aichi
+w 7
+ur 木田
+w 8
+ur 津島
+end
+
+begin rail meitetsu
+m kasamatsu-gifu
+w 10
+sw 3
+end
+
+begin rail meitetsu
+m owari-ichinomiya
+nw 3
+dr 玉ノ井
+end
+
+begin rail meitetsu
+m owari-ichinomiya
+sw 2
+w 14
+sw 1
+s 2
+ur 森上
+s 12
+end
+
+begin rail meitetsu
+m nagoya 1 -4
+e 1
+ne 1
+n 3
+ne 1
+e 2
+box 上小田井
+n 6
+dc 岩倉
+n 6
+dc 江南
+n 2
+ne 1
+e 20
+dc 御嵩
+end
+
+begin rail nagoya-higashiyama
+m nagoya
+n 1
+nw 2
+w 6
+sw 1
+s 5
+dc 高畑
+end
+
+begin rail nagoya-sakura
+m nagoya -7 1
+dc 中村区役所
+e 8
+n 2
+e 5
+box 丸の内 marunouchi-aichi
+e 5
+box 久屋大通
+e 7
+se 1
+s 9
+box 新瑞橋
+s 2
+dc 徳重
+end
+
+begin rail nagoya-higashiyama
+m nagoya
+se 1
+e 5
+box 伏見
+e 5
+box 栄 sakae-aichi
+e 4
+box 千種
+e 4
+box 今池
+e 4
+box 本山
+e 4
+box 藤が丘
+end
+
+begin rail nagoya-aonami
+m nagoya
+sw 4
+s 4
+dr 金城ふ頭
+end
+
+begin rail nagoya-tsurumai
+m marunouchi-aichi 0 -8
+s 11
+se 1
+e 4
+box 上前津
+e 4
+box 鶴舞
+e 4
+box 御器所
+e 4
+box 八事
+e 4
+box 赤池 akaike-aichi
+end
+
+begin rail nagoya-mejo
+m sakae-aichi
+s 6
+se 2
+e 9
+ne 1
+n 12
+nw 1
+box 砂田橋
+w 4
+box 大曽根 ozone-aichi
+w 4
+box 平安通 heiandori-aichi
+w 2
+sw 1
+s 5
+end
+
+begin rail nagoya-mejo
+m kanayama-aichi
+sw 6
+s 2
+dr 名古屋港
+end
+
+begin rail nagoya-kami-ida
+m heiandori-aichi
+n 3
+box 上飯田 kami-iida
+end
+
+begin rail meitetsu
+m nagoya 2 1
+s 4
+se 1
+e 7
+se 1
+s 5
+uc 神宮前 jingumae-aichi
+s 4
+dr 大江 ooe-aichi
+s 5
+dr 太田川 otagawa-aichi
+w 6
+sw 1
+s 1
+dr 尾張横須賀
+s 2
+dr 朝倉
+s 2
+dr 新舞子
+s 2
+dr 常滑
+s 2
+sw 4
+w 1
+box ✈中部国際空港
+end
+
+begin rail meitetsu
+m ooe-aichi
+w 3
+dr 東名古屋港
+end
+
+begin rail meitetsu
+m otagawa-aichi
+s 4
+dr 阿久比
+s 2
+dr 知多半田
+s 2
+dr 青山
+s 2
+dr 知多武豊
+s 4
+dr 富貴 fuki-aichi
+s 3
+dr 河和
+end
+
+begin rail meitetsu
+m fuki-aichi
+w 4
+sw 1
+s 2
+dr 内海
+end
+
+begin rail meitetsu
+m sakae-aichi
+ne 1
+e 1
+ne 7
+e 5
+dc 小幡
+e 3
+dc 尾張旭
+e 4
+box 新瀬戸
+e 3
+dc 尾張瀬戸
+end
+
+begin rail meitetsu
+m jingumae-aichi
+e 7
+se 2
+s 1
+dr 鳴海
+s 2
+dr 知立 chiryu-aichi
+e 9
+ur 新安城 shin-anjo
+e 6
+ur 本宿
+e 4
+ur 国府 kou-aichi
+s 29
+se 3
+end
+
+begin rail meitetsu
+m chiryu-aichi
+ne 4
+e 6
+ur 土橋
+e 1
+ne 3
+n 4
+dc 豊田市
+n 3
+dc 梅坪 umetsubo-aichi
+e 3
+dc 猿投
+end
+
+begin rail meitetsu
+m umetsubo-aichi
+w 7
+end
+
+begin rail meitetsu
+m chiryu-aichi
+s 8
+dr 三河高浜
+s 3
+dr 碧南
+end
+
+begin rail meitetsu
+m shin-anjo
+s 8
+dr 南安城
+s 3
+dr 桜井
+s 3
+dr 西尾
+s 3
+dr 吉良吉田
+s 3
+dr 西浦
+s 1
+se 1
+e 5
+end
+
+begin rail meitetsu
+m kami-iida
+n 9
+dc 小牧
+n 7
+box 犬山
+n 4
+box 新鵜沼 unuma-gifu
+w 4
+dc 三柿野
+w 4
+dc 新那加
+w 1
+nw 4
+w 1
+end
+
+begin rail meitetsu
+m kou-aichi
+e 3
+end
+
+begin rail nagoya-gw-bus
+m ozone-aichi
+se 1
+e 2
+ne 2
+n 2
+ne 1
+e 1
+ur 小幡緑地
+end
+
+begin rail toyotetsu
+m toyohashi-aichi
+sw 5
+w 1
+dr 高師
+w 3
+dr 老津
+w 3
+dr 三河田原
+end
+
+begin rail toyotetsu
+m toyohashi-aichi
+ne 2
+n 4
+e 3
+uc 井原 ihara-aichi
+e 2
+uc 赤岩口
+end
+
+begin rail entetsu
+m hamamatsu
+n 7
+end
+
+begin rail toyotetsu
+m ihara-aichi
+s 4
+uc 運動公園前
+end
+
+begin rail-l others
+m kinosaki-hyogo -2 1
+dr 山麓
+w 2
+dr 山上(城崎RW)
+end
+
+############################# 中国(岡山以西) ###################################
+
+begin rail okayama-higashiyama
+m okayama 1 0
+s 4
+e 1
+dc 柳川 yanagawa-okayama
+e 4
+s 2
+dc 東山
+end
+
+begin rail okayama-seikibashi
+m yanagawa-okayama
+s 3
+dc 清輝橋
+end
+
+begin rail bataden
+m matsue 0 -3
+uc 松江しんじ湖温泉
+nw 2
+w 2
+uc 一畑口
+w 4
+uc 川跡 kawato-shimane
+s 5
+end
+
+begin rail bataden
+m kawato-shimane
+w 4
+uc 出雲大社前
+end
+
+begin rail hiroden
+m hiroshima
+s 5
+dc 的場町 matoba-hiroshima
+w 3
+dc 八丁堀 hatchobori-hiroshima
+w 6
+ur 十日市町 tokaichi-hiroshima
+s 2
+ur 土橋 tsuchihashi-hiroshima
+w 10
+s 3
+sw 1
+end
+
+begin rail hiroden
+m matoba-hiroshima
+s 5
+dc 皆実町6 minamimachi-hiroshima
+s 3
+dc 広島港
+end
+
+begin rail hiroden
+m minamimachi-hiroshima
+w 4
+nw 2
+n 2
+box 本通 hondori-hiroshima
+n 1
+end
+
+begin rail hiroden
+m hatchobori-hiroshima
+n 3
+dc 白鳥
+end
+
+begin rail hiroden
+m tokaichi-hiroshima
+n 4
+end
+
+begin rail hiroden
+m tsuchihashi-hiroshima
+s 4
+dc 江波
+end
+
+begin rail-l hiroden
+m miyajimaguchi 7 4
+dc 紅葉谷
+s 3
+dc 榧谷
+w 2
+dc 獅子岩
+end
+
+begin rail astram
+m hondori-hiroshima
+ne 1
+n 9
+nw 1
+w 5
+ur 長楽寺
+w 1
+sw 1
+s 2
+ur 広域公園前
+end
+
+begin rail-l others
+m tottori 0 -2
+uc 砂丘センター
+n 2
+uc 砂丘
+end
+
+begin rail-l others
+m seno-hiroshima
+n 5
+uc みどり中央
+end
+
+begin rail-l others
+m iwakuni -3 -2
+dc 山麓
+n 2
+dc 山頂
+end
+
+begin rail-l others
+m shimonoseki 2 -2
+dc RW壇ノ浦
+e 3
+dc RW上
+end
+
+############################# 四国 ###################################
+
+begin rail kotoden
+m takamatsu-kagawa 2 2
+box 高松築港 takamatsu-kagawa
+s 2
+box 瓦町 kawaramachi-kagawa
+s 5
+dc 仏生山
+w 8
+dc 滝宮
+w 9
+end
+
+begin rail kotoden
+m kawaramachi-kagawa
+e 5
+uc 屋島
+e 4
+uc 八栗 yakuri-kagawa
+e 3
+se 1
+s 2
+end
+
+begin rail kotoden
+m kawaramachi-kagawa
+se 6
+e 1
+dc 高田
+e 3
+dc 平木
+e 3
+dc 長尾
+end
+
+begin rail others
+m yakuri-kagawa 0 -3
+uc 八栗登山口
+e 2
+uc 八栗山上
+end
+
+begin rail-l others
+m tokushima -2 0
+dr 山麓
+w 2
+dr 眉山公園
+end
+
+begin rail-l others
+m kannonji-kagawa 0 2
+dc 山麓
+s 2
+dc 雲辺寺山山頂
+end
+
+begin rail-l others
+m awa-ikeda 1 -2
+uc 箸蔵RW
+e 2
+uc 箸蔵寺
+end
+
+begin rail iyotetsu
+m matsuyama 4 0
+box JR松山 matsuyama
+n 3
+uc 古町
+n 2
+e 6
+uc 本町6 honmachi6-ehime
+e 7
+s 2
+dc 上一万 kamiichiman-ehime
+s 3
+w 7
+dc 南堀端
+w 3
+uc 大手町
+w 3
+end
+
+begin rail iyotetsu
+m kamiichiman-ehime
+e 3
+dc 道後温泉
+end
+
+begin rail iyotetsu
+m honmachi6-ehime
+s 8
+box 松山市 matsuyama-city
+end
+
+begin rail iyotetsu
+m matsuyama-city
+w 2
+nw 1
+n 4
+nw 1
+w 4
+dr 衣山
+w 4
+dr 三津
+w 3
+dr 高浜
+end
+
+begin rail iyotetsu
+m matsuyama-city
+e 5
+dr いよ立花
+e 2
+dr 久米
+e 2
+dr 梅本
+e 2
+dr 横河原
+end
+
+begin rail iyotetsu
+m matsuyama-city
+s 1
+sw 1
+w 12
+sw 1
+s 1
+ur 余戸
+s 2
+ur 松前
+s 2
+box 郡中港 iyoshi-ehime
+end
+
+begin rail-l others
+m honmachi6-ehime 4 4
+ur 長者ヶ平
+e 2
+ur 東雲口
+end
+
+begin rail tosaden
+m ino-kochi 0 -2
+ur 伊野
+e 1
+se 5
+dc 旭駅前通
+e 4
+box はりまや橋
+e 6
+box 後免町
+end
+
+begin rail tosaden
+m kochi
+s 6
+dc 桟橋通5
+end
+
+############################# 九州・沖縄 ###################################
+
+begin rail others
+m kokura-fukuoka
+s 5
+se 1
+e 2
+dr 企救丘
+end
+
+begin rail nishitetsu
+m hakata -10 0
+box 天神 tenjin-fukuoka
+s 3
+box 薬院
+s 3
+se 1
+e 5
+ur 大橋
+e 10
+se 1
+s 1
+uc 西鉄二日市 nishitetsu-futukaichi
+s 8
+uc 宮の陣 miyanojin-fukuoka
+s 3
+uc 久留米
+s 1
+sw 1
+w 11
+sw 1
+s 2
+dr 大善寺
+s 3
+dr 西鉄柳川
+s 2
+se 1
+e 3
+end
+
+begin rail nishitetsu
+m nishitetsu-futukaichi
+e 2
+uc 太宰府
+end
+
+begin rail nishitetsu
+m miyanojin-fukuoka
+e 4
+ne 1
+n 2
+end
+
+begin rail amagi
+m kiyama-saga
+e 8
+box 甘木
+end
+
+begin rail fukuoka-kuko
+m hakata 5 0
+box ✈福岡空港
+w 10
+box 中洲川端 kawabata-fukuoka
+w 11
+box 姪浜
+end
+
+begin rail fukuoka-nanakuma
+m tenjin-fukuoka
+se 1
+s 1
+sw 1
+w 6
+uc 橋本
+end
+
+begin rail fukuoka-hakozaki
+m kawabata-fukuoka
+ne 3
+box 貝塚 kaizuka-fukuoka
+end
+
+begin rail nishitetsu
+m kaizuka-fukuoka
+n 1
+ne 2
+nw 2
+n 5
+uc 西鉄新宮
+end
+
+begin rail kumamoto-tram
+m kami-kumamoto
+e 3
+uc 辛島町 karashimacho-kumamoto
+e 3
+se 4
+e 2
+dc 健軍町
+end
+
+begin rail kumamoto-tram
+m karashimacho-kumamoto
+s 1
+sw 3
+se 3
+dc 田崎橋
+end
+
+begin rail kumamoto-dentetsu
+m kami-kumamoto
+ne 2
+n 2
+ne 1
+e 1
+uc 北熊本 kita-kumamoto
+n 3
+uc 御代志
+end
+
+begin rail kumamoto-dentetsu
+m kita-kumamoto
+s 2
+uc 藤崎宮前
+end
+
+begin rail others
+m beppu-oita -2 0
+ur 雲泉寺
+w 2
+ur 乙原(ラクテンチ)
+end
+
+begin rail others
+m kagoshima
+s 4
+w 1
+dc 高見馬場
+w 3
+s 1
+se 2
+e 1
+dc 郡元 korimoto-kagoshima
+s 2
+sw 1
+se 1
+s 2
+dc 谷山
+end
+
+begin rail others
+m korimoto-kagoshima
+n 3
+end
+
+begin rail shimabara
+m isahaya-nagasaki
+e 6
+dr 多比良町
+e 3
+se 1
+s 1
+dr 島原
+s 3
+dr 島原外港
+end
+
+begin rail others
+m uragami-nagasaki 2 -1
+uc 赤迫
+sw 1
+se 1
+s 1
+sw 1
+s 6
+e 3
+dc 築町
+end
+
+begin rail others
+m nagasaki
+e 4
+dc 公会堂前
+end
+
+begin rail others
+m nagasaki 8 -2
+dc 蛍茶屋
+w 4
+s 6
+dc 西浜町 nishihamamachi-nagasaki
+s 5
+dc 石橋
+end
+
+begin rail others
+m nishihamamachi-nagasaki
+e 4
+dc 正覚寺下
+end
+
+begin rail others
+m arita-nagasaki
+n 9
+w 6
+dc 松浦
+w 6
+dc たびら平戸口
+s 4
+dc 佐々
+s 4
+se 1
+e 3
+end
+
+begin rail yui-rail
+m $naha-jp 2 3
+box ✈那覇空港
+se 2
+dc 赤嶺
+e 1
+ne 2
+ur 旭橋
+ne 1
+e 1
+ur 古島
+se 2
+dc 首里
+end
+

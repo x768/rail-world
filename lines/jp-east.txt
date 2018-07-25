@@ -1,0 +1,1695 @@
+############################# 中部〜関東(浜松以東) ###################################
+
+begin rail others
+m yoshiwara-shizuoka
+n 2
+ne 1
+e 1
+ur 岳南江尾
+end
+
+begin rail-l others
+m hamamatsu -3 -2
+ur 舘山寺
+n 2
+ur 山上
+end
+
+begin rail-l others
+m shizuoka 2 3
+dc 日本平
+s 2
+dc 久能山
+end
+
+begin rail izuhakone
+m mishima-shizuoka
+s 3
+dc 三島田町
+s 2
+dc 大場
+s 2
+dc 伊豆長岡
+s 2
+dc 大仁
+s 2
+dc 修善寺
+end
+
+begin rail others
+m ito-shizuoka
+s 3
+dc 伊豆高原
+s 2
+dc 伊豆熱川
+s 2
+dc 伊豆稲取
+s 2
+dc 河津
+s 2
+dc 下田
+end
+
+begin rail-l others
+m mishima-shizuoka -2 7
+dr 伊豆の国P
+s 2
+dr 山頂
+end
+
+begin rail-l others
+m atami-shizuoka 3 1
+dc 山麓
+s 2
+dc 秘宝館
+end
+
+begin rail hakone-tozan
+m odawara
+w 4
+dr 箱根湯本
+w 3
+box 強羅
+w 4
+box 早雲山 sounzan-kanagawa
+end
+
+begin rail-l hakone-tozan
+m sounzan-kanagawa
+w 3
+ur 大涌谷
+w 2
+ur 姥子
+w 2
+ur 桃源台
+end
+
+begin rail-l others
+m sounzan-kanagawa -5 2
+dc 駒ヶ岳
+w 2
+dc 箱根園
+end
+
+begin rail izuhakone
+m odawara
+nw 3
+w 1
+ur 五百羅漢
+w 2
+ur 相模沼田
+w 2
+ur 和田河原
+w 2
+ur 大雄山
+end
+
+begin rail odakyu
+m odawara
+n 7
+e 9
+ne 1
+n 2
+ne 1
+box 海老名 ebina-kanagawa
+e 3
+ur 相模大野 sagami-oono
+e 4
+ne 1
+n 20
+dc 新百合ヶ丘
+ne 10
+box 豪徳寺/山下
+ne 3
+box 下北沢
+ne 3
+box 代々木上原 yoyogi-uehara
+n 2
+ne 5
+end
+
+begin rail odakyu
+m sagami-oono
+s 2
+box 中央林間 chuo-rinkan-kanagawa
+s 2
+box 大和
+s 4
+box 湘南台 shonandai-kanagawa
+s 3
+sw 2
+s 2
+dr 片瀬江ノ島
+end
+
+begin rail enoden
+m fujisawa-kanagawa
+s 4
+box 江ノ島 enoshima
+e 14
+end
+
+begin rail shonan-monorail
+m ofuna-kanagawa
+sw 2
+w 8
+box 湘南江の島 enoshima
+end
+
+begin rail keio
+m hashimoto-kanagawa
+ne 3
+n 10
+ne 2
+n 2
+box 多摩センター tama-center
+ne 3
+n 18
+dc 調布 chofu-tokyo
+end
+
+begin rail keio
+m chofu-tokyo -4 0
+sw 1
+w 1
+dc 競馬
+end
+
+begin rail seibu
+m haijima-tokyo
+ne 4
+e 3
+box 玉川上水
+e 6
+ur 小川 ogawa-tokyo
+e 4
+uc 萩山 hagiyama-tokyo
+e 4
+uc 小平 kodaira-tokyo
+e 3
+uc 田無
+e 3
+uc 上石神井
+e 3
+uc 鷺ノ宮
+e 12
+s 3
+end
+
+begin rail seibu
+m musashi-sakai
+sw 4
+dc 是政
+end
+
+begin rail seibu
+m kokubunji-tokyo
+nw 4
+n 7
+ur 東村山
+w 2
+ur 西武園
+end
+
+begin rail seibu
+m kokubunji-tokyo
+n 4
+nw 3
+w 1
+nw 2
+box 遊園地
+w 4
+box 球場前
+n 5
+ur 西所沢
+end
+
+begin rail seibu
+m kodaira-tokyo
+nw 7
+w 1
+n 3
+box 所沢
+n 2
+ur 新所沢
+n 2
+dc 狭山市
+n 4
+uc 本川越
+end
+
+begin rail seibu
+m ikebukuro
+w 9
+box 練馬 nerima-tokyo
+w 6
+dr 石神井公園
+w 4
+dr ひばりヶ丘駅
+w 6
+nw 3
+w 12
+ur 入間市
+w 2
+ur 飯能
+w 6
+dc 吾野
+w 2
+dc 横瀬
+w 2
+dc 西武秩父
+end
+
+begin rail seibu
+m nerima-tokyo
+nw 1
+n 2
+box 豊島園
+end
+
+begin rail seibu
+m nerima-tokyo
+ne 4
+n 1
+end
+
+begin rail keio
+m takao-tokyo -1 3
+dc 高尾山口
+n 2
+ne 1
+se 2
+e 5
+dr 北野 kitano-tokyo
+e 4
+box 高幡不動 takahata-fudo-tokyo
+e 1
+ne 4
+e 12
+se 3
+e 2
+box 下高井戸
+e 4
+dr 明大前
+e 3
+ne 3
+e 1
+ne 2
+end
+
+begin rail keio
+m kitano-tokyo
+n 3
+nw 1
+w 4
+ur 八王子
+end
+
+begin rail keio
+m takahata-fudo-tokyo 1 0
+s 4
+end
+
+begin rail keio
+m kisshoji-tokyo
+s 1
+se 3
+e 4
+se 1
+s 4
+se 2
+e 9
+se 1
+end
+
+begin rail keio
+m mitake-tokyo 0 2
+dr 滝本
+s 2
+dr 御岳山
+end
+
+begin rail keio
+m takao-tokyo -2 4
+dc 清滝
+w 2
+ur 高尾山
+end
+
+begin rail-l keio
+m takao-tokyo -2 6
+dc 山麓
+w 2
+ur 山上
+end
+
+begin rail tama-monorail
+m tama-center
+w 7
+nw 3
+n 10
+box 動物公園
+n 18
+dr 上北台
+end
+
+begin rail fujikyu
+m otsuki-yamanashi
+s 3
+dc 都留文科大学前
+s 3
+dc 三つ峠
+s 3
+dc 富士山
+w 2
+dc 富士急ハイランド
+w 2
+dc 河口湖
+end
+
+begin rail-l others
+m minobu-yamanashi -2 -4
+ur 山麓
+n 2
+ur 奥の院
+end
+
+begin rail matsumoto
+m matsumoto-nagano
+w 4
+dc 新村
+w 4
+dc 波田
+w 4
+dc 新島々
+end
+
+begin rail others
+m ueda-nagano
+s 3
+sw 1
+w 1
+dc 下之郷
+w 3
+dc 別所温泉
+end
+
+begin rail nagano-dentetsu
+m nagano
+nw 2
+n 1
+ur 権堂
+e 8
+dc 須坂
+e 2
+dc 小布施
+e 2
+dc 信州中野
+e 2
+dc 湯田中
+end
+
+begin rail odakyu
+m tama-center 1 4
+dc 唐木田
+n 4
+e 4
+end
+
+begin rail tokyu
+m chuo-rinkan-kanagawa
+e 9
+ne 1
+n 11
+box あざみ野 azamino-kanagawa
+n 2
+ne 10
+ur 二子玉川 futako-tamagawa
+e 7
+dc 大岡山
+e 3
+dc 旗の台
+e 1
+se 7
+s 5
+se 1
+e 1
+end
+
+begin rail tokyu
+m futako-tamagawa
+n 7
+dc 三軒茶屋 sakgenjaya-tokyo
+ne 4
+e 4
+end
+
+begin rail tokyu
+m nagatsuta-kanagawa
+nw 2
+ur こども
+end
+
+begin rail tokyu
+m sakgenjaya-tokyo
+w 2
+nw 6
+n 4
+end
+
+begin rail sotetsu
+m ebina-kanagawa 2 2
+s 3
+se 1
+e 13
+uc 二俣川
+e 13
+se 2
+end
+
+begin rail sotetsu
+m shonandai-kanagawa
+e 10
+ne 1
+n 3
+end
+
+begin rail yokohama-blue
+m azamino-kanagawa
+e 4
+se 2
+box センター北/南
+se 7
+s 3
+se 4
+sw 3
+box 上大岡
+w 23
+nw 1
+end
+
+begin rail yokohama-green
+m nakayama-kanagawa
+n 5
+ne 1
+e 8
+box 日吉
+end
+
+begin rail tokyu
+m yokohama 0 -1
+nw 2
+n 20
+uc 多摩川 tamagawa-tokyo
+n 3
+dr 田園調布 denen-chofu
+n 2
+uc 自由が丘
+n 4
+ne 1
+n 2
+box 中目黒 nakameguro
+n 2
+ne 2
+end
+
+begin rail tokyu
+m kamata-tokyo
+w 2
+nw 3
+n 4
+nw 9
+w 1
+end
+
+begin rail tokyu
+m kamata-tokyo
+nw 3
+n 5
+nw 7
+n 7
+ne 1
+e 2
+end
+
+begin rail tokyu
+m denen-chofu
+ne 6
+e 2
+end
+
+begin rail yokohama-mm
+m yokohama
+se 2
+s 2
+dc 元町
+end
+
+begin rail keikyu
+m shinagawa 0 -3
+box 泉岳寺
+s 3
+se 2
+s 4
+uc 青物横丁
+s 11
+uc 平和島
+s 3
+uc 京急蒲田 keikyu-kamata
+s 5
+e 1
+box 京急川崎 kawasaki-kanagawa
+w 13
+sw 6
+s 6
+box 金沢八景 kanazawa-8k
+s 2
+dc 横須賀中央
+s 4
+dc 堀ノ内 horinouchi-kanagawa
+s 2
+dc 浦賀
+end
+
+begin rail keikyu
+m keikyu-kamata
+e 6
+box 天空橋
+e 6
+box ✈羽田国際T
+e 8
+box ✈羽田国内T haneda-domestic
+end
+
+begin rail keikyu
+m kawasaki-kanagawa 2 -2
+e 6
+dr 小島新田
+end
+
+begin rail keikyu
+m kanazawa-8k
+w 6
+dr 新逗子
+end
+
+begin rail keikyu
+m horinouchi-kanagawa
+w 7
+dr 三崎口
+end
+
+begin rail yokohama-kanazawa
+m shin-sugita-kanagawa
+se 1
+s 2
+dc 八景島
+s 1
+sw 1
+w 3
+end
+
+begin rail tokyo-rinkai
+m osaki-tokyo
+s 2
+se 3
+s 6
+se 1
+e 4
+ne 1
+n 5
+ne 1
+e 2
+box 天王洲
+e 10
+uc 国際展示場
+e 10
+dr 東雲
+e 4
+n 23
+end
+
+begin rail tokyo-monorail
+m hamamatsucho
+s 1
+sw 1
+w 3
+sw 1
+s 20
+se 1
+e 4
+ne 1
+se 4
+e 7
+ne 1
+nw 1
+w 3
+box ✈羽田第1ビル haneda-domestic
+w 3
+nw 1
+n 2
+ne 1
+e 3
+box ✈羽田第2ビル haneda-domestic
+end
+
+begin rail tokyo-asakusa
+m gotanda-tokyo 2 10
+dc 西馬込
+nw 2
+n 8
+e 11
+ne 2
+box 三田
+e 4
+box 大門
+ne 2
+e 2
+ne 6
+n 3
+nw 2
+n 7
+box 人形町
+ne 2
+n 2
+e 1
+ne 2
+box 蔵前
+ne 2
+box 浅草 asakusa
+e 4
+box 押上 oshiage-tokyo
+end
+
+begin rail tsukuba-ex
+m akihabara 1 0
+ne 1
+n 2
+ne 1
+e 2
+box 新御徒町
+ne 5
+n 7
+ne 3
+ne 5
+box 大鷹の森
+ne 7
+e 4
+box 守谷
+e 4
+dc つくば tsukuba-ibaraki
+end
+
+begin rail keisei
+m tsukuba-ibaraki -1 -3
+dc 宮脇
+n 2
+dc 筑波山頂
+end
+
+begin rail-l keisei
+m tsukuba-ibaraki 1 -5
+dc 女体山
+e 2
+dc つつじヶ丘
+end
+
+begin rail tokyo-mita
+m meguro-tokyo
+e 5
+box 白金高輪
+e 8
+n 3
+box 芝公園
+n 16
+box 大手町
+n 8
+box 春日
+nw 3
+w 4
+nw 3
+n 2
+nw 1
+w 6
+nw 5
+w 5
+box 西高島平
+end
+
+begin rail tokyo-nanboku
+m meguro-tokyo
+ne 1
+e 3
+se 1
+n 3
+box 麻布十番
+n 7
+box 国会/溜池
+n 3
+w 4
+nw 2
+e 1
+ne 4
+n 6
+ne 1
+e 7
+ne 1
+n 2
+nw 2
+w 2
+nw 2
+n 8
+box 赤羽岩淵 akabane-iwabuchi
+end
+
+begin rail tokyo-hibiya
+m nakameguro
+e 6
+ne 2
+box 六本木
+e 9
+box 虎ノ門
+n 2
+box 霞ヶ関
+n 1
+ne 1
+e 2
+box 日比谷
+e 11
+box 銀座
+e 4
+box 東銀座
+n 10
+nw 1
+w 2
+nw 1
+n 11
+ne 1
+e 5
+ne 1
+n 4
+end
+
+begin rail tokyo-ginza
+m shibuya 1 0
+ne 6
+box 赤坂見附/永田町
+se 8
+e 7
+se 3
+ne 4
+n 12
+nw 1
+w 3
+n 1
+ne 1
+n 8
+ne 1
+e 8
+se 2
+end
+
+begin rail tokyo-hanzomon
+m shibuya
+ne 6
+e 4
+n 4
+ne 3
+e 3
+se 1
+e 3
+se 1
+e 12
+ne 1
+e 6
+ne 1
+n 8
+end
+
+begin rail tokyo-fukutoshin
+m shibuya
+n 5
+ne 2
+n 14
+nw 7
+box 小竹向原
+nw 1
+w 5
+nw 1
+end
+
+begin rail tokyo-chiyoda
+m yoyogi-uehara
+se 1
+e 9
+box 表参道
+e 13
+ne 1
+n 8
+e 2
+ne 5
+n 2
+nw 2
+n 6
+ne 4
+e 11
+ne 1
+e 2
+se 1
+ne 2
+uc 北綾瀬
+end
+
+begin rail tokyo-marunouchi
+m ogikubo-tokyo
+s 1
+se 1
+e 6
+box 中野坂上
+e 6
+e 4
+se 1
+box 新宿3
+se 2
+s 1
+se 4
+e 4
+se 3
+e 12
+ne 2
+nw 1
+n 1
+nw 4
+w 2
+nw 4
+ne 5
+n 1
+nw 1
+w 3
+nw 2
+w 8
+nw 3
+w 4
+sw 1
+end
+
+begin rail tokyo-tozai
+m nakano-tokyo
+ne 1
+e 6
+ne 2
+e 14
+se 3
+box 九段下
+se 3
+e 13
+box 日本橋
+e 4
+box 茅場町
+e 16
+dc 浦安
+e 1
+ne 1
+n 4
+ne 2
+end
+
+begin rail tokyo-oedo
+m shinjuku -4 0
+e 3
+se 4
+s 1
+se 5
+s 4
+se 2
+e 10
+se 3
+e 7
+box 汐留 shiodome-tokyo
+e 6
+ne 2
+n 9
+box 月島
+n 3
+ne 1
+n 2
+box 門前仲町
+n 2
+box 清澄白河
+n 5
+nw 4
+w 14
+sw 1
+w 9
+sw 5
+w 2
+box 東新宿
+w 2
+sw 1
+w 4
+sw 1
+s 2
+sw 2
+w 1
+box 都庁前
+n 7
+box 中井
+n 7
+n 5
+dc 光が丘
+end
+
+begin rail tokyo-shinjuku
+m shinjuku 2 0
+e 1
+se 2
+e 2
+ne 5
+e 8
+box 神保町
+e 19
+box 森下
+e 4
+box 住吉
+e 3
+dc 大島
+e 2
+dc 船堀
+e 3
+ne 1
+n 1
+end
+
+begin rail tokyo-yurakucho
+m shin-kiba
+s 1
+sw 1
+w 3
+box 豊洲
+w 13
+box 有楽町
+w 11
+nw 2
+w 6
+nw 2
+w 2
+ne 2
+n 1
+ne 2
+n 6
+nw 4
+w 3
+n 1
+nw 6
+w 6
+box 和光市
+end
+
+begin rail tokyo-arakawa
+m takadanobaba 5 -1
+uc 早稲田
+n 4
+ne 1
+n 6
+ne 2
+e 5
+ne 2
+e 9
+box 熊野前
+e 10
+se 1
+s 3
+ur 三ノ輪
+end
+
+begin rail others
+m nishi-nippori
+n 8
+dc 見沼代
+end
+
+begin rail tokyo-rinkai
+m shiodome-tokyo
+s 8
+w 3
+s 1
+ur 台場
+s 3
+e 7
+dr 展示場正門
+e 4
+n 4
+e 3
+n 19
+end
+
+begin rail others
+m ueno-tokyo -3 0
+dr 東園
+w 2
+uc 西園
+end
+
+begin rail keisei
+m maihama-chiba 0 2
+box TDR maihama-chiba
+e 1
+se 1
+s 1
+sw 1
+w 2
+nw 1
+n 1
+ne 1
+e 1
+end
+
+begin rail saitama-kosoku
+m akabane-iwabuchi
+n 4
+uc 浦和美園
+end
+
+begin rail toubu
+m ikebukuro 1 0
+nw 1
+n 1
+nw 2
+n 1
+nw 4
+w 4
+sw 2
+w 9
+dr 志木
+w 4
+dr ふじみ野
+w 3
+nw 2
+w 5
+nw 1
+n 1
+uc 坂戸 sakado-saitama
+n 1
+nw 1
+w 5
+n 2
+nw 1
+w 2
+end
+
+begin rail toubu
+m sakado-saitama
+w 6
+end
+
+begin rail toubu
+m asakusa
+n 1
+ne 1
+e 3
+ur 曳舟 hikifune-tokyo
+n 4
+nw 4
+n 3
+dr 西新井 nishiarai-tokyo
+n 7
+dr 春日部
+n 4
+nw 1
+w 10
+dr 動物公園 toubu-dobutsu-koen
+w 34
+box 羽生 hanyu-saitama
+n 4
+dc 館林 tatebayashi-gunma
+nw 3
+w 5
+dc 足利市
+w 2
+sw 4
+dc 太田 ota-gunma
+w 4
+dc 木崎
+w 4
+dc 境町
+w 6
+nw 1
+n 2
+end
+
+begin rail toubu
+m tatebayashi-gunma
+w 5
+dc 東小泉
+sw 1
+dc 西小泉
+end
+
+begin rail toubu
+m ota-gunma
+e 4
+ne 1
+e 4
+end
+
+begin rail toubu
+m ota-gunma
+nw 4
+n 4
+box 相老
+n 2
+box 赤城
+end
+
+begin rail toubu
+m toubu-dobutsu-koen
+n 2
+nw 1
+w 24
+nw 1
+n 7
+ur 新栃木 shin-tochigi
+n 2
+ur 新鹿沼
+n 6
+ur 下今市 shimoimaichi-tochigi
+n 2
+ur 鬼怒川温泉
+n 3
+box 新藤原 shin-fujiwara-tochigi
+end
+
+begin rail others
+m kiryu-gunma
+nw 2
+ne 2
+n 4
+dc 水沼
+n 3
+dc 神戸
+n 3
+dc 足尾
+n 2
+dc 間藤
+end
+
+begin rail jomo-tetsudo
+m kiryu-gunma 2 -4
+dc 西桐生
+w 14
+dc 大胡
+w 5
+sw 1
+s 4
+ur 中央前橋
+end
+
+begin rail yagan-tetsudo
+m shin-fujiwara-tochigi
+n 3
+box 尾瀬口 ozeguchi-fukushima
+end
+
+begin rail toubu
+m shin-tochigi
+e 4
+ne 1
+n 3
+dr 宇都宮
+end
+
+begin rail toubu
+m shimoimaichi-tochigi
+w 4
+ur 東武日光
+end
+
+begin rail toubu
+m tatebayashi-gunma
+n 8
+dc 田沼
+n 2
+dc 葛生
+end
+
+begin rail saitama-new-shuttle
+m omiya-saitama 0 -1
+nw 2
+w 8
+uc 内宿
+end
+
+begin rail toubu
+m nishiarai-tokyo
+w 2
+dr 大師前
+end
+
+begin rail toubu
+m hikifune-tokyo
+s 2
+end
+
+begin rail toubu
+m hikifune-tokyo
+e 2
+se 3
+s 3
+end
+
+begin rail toubu
+m funabashi-chiba
+n 13
+dc 六実
+n 4
+nw 7
+w 11
+uc 野田
+w 4
+w 15
+dr 岩槻
+w 14
+end
+
+begin rail chichibu
+m hanyu-saitama
+w 14
+dc 行田市
+w 11
+sw 5
+w 2
+dc 武川
+w 3
+sw 5
+w 4
+sw 1
+s 1
+ur 野上
+s 2
+ur 長瀞
+s 2
+ur 皆野
+s 2
+ur 秩父
+s 2
+ur 御花畑
+s 1
+sw 1
+w 2
+dc 三峰口
+end
+
+begin rail chiba-toyo-kousoku
+m nishi-funabashi
+ne 5
+e 3
+box 北習志野
+e 3
+se 1
+s 2
+end
+
+begin rail chiba-monorail
+m chiba-minato
+n 2
+ne 6
+e 1
+uc 動物公園
+se 2
+s 3
+dc 千城台
+end
+
+begin rail chiba-monorail
+m chiba
+se 2
+s 1
+dc 県庁前
+end
+
+begin rail others
+m mabashi-chiba
+w 3
+nw 1
+n 2
+nw 1
+w 5
+ur 流山
+end
+
+begin rail keisei
+m ueno-tokyo -1 -1
+n 3
+ne 1
+e 12
+se 2
+e 2
+ur 青砥
+e 2
+box 高砂 takasago-tokyo
+se 3
+s 6
+se 1
+ne 2
+e 3
+se 2
+s 2
+se 1
+e 1
+box 船橋 funabashi-chiba
+e 4
+box 津田沼
+ne 1
+n 3
+ne 1
+e 1
+box 勝田台
+e 5
+box ユーカリ yukari-chiba
+e 4
+uc 京成佐倉
+e 5
+ne 2
+e 6
+se 1
+s 3
+end
+
+begin rail keisei
+m narita-chiba
+e 6
+box 東成田 higashi-narita
+end
+
+begin rail others
+m higashi-narita
+e 8
+dc 芝山千代田
+end
+
+begin rail others
+m yukari-chiba
+n 2
+e 1
+ne 1
+nw 1
+w 1
+uc 中学校
+w 1
+sw 1
+se 1
+e 1
+end
+
+begin rail narita-airport
+m takasago-tokyo
+e 13
+box 新鎌ヶ谷
+e 7
+ur 千葉NT中央
+e 7
+ur 印旛日本医大
+e 4
+ur 成田湯川
+e 6
+se 2
+s 4
+end
+
+begin rail keisei
+m oshiage-tokyo
+e 1
+ne 2
+n 4
+end
+
+begin rail keisei
+m kanamachi-tokyo
+s 4
+end
+
+begin rail shin-keisei
+m matsuido-chiba
+e 6
+se 7
+s 10
+end
+
+begin rail-l keisei
+m hamakanaya-chiba 2 1
+dc 鋸山山麓
+e 2
+dc 鋸山山頂
+end
+
+begin rail kominato-tetsudo
+m goi-chiba
+e 6
+se 1
+s 2
+uc 上総牛久
+s 3
+uc 里見
+s 2
+se 1
+e 3
+box 上総中野 kazusa-nakano
+end
+
+begin rail isumi-tetsudo
+m kazusa-nakano
+e 5
+dr 大多喜
+e 3
+end
+
+begin rail others
+m choushi-chiba
+e 3
+dc 外川
+end
+
+begin rail others
+m takasaki-gunma 0 1
+sw 4
+w 1
+dc 上州富岡
+w 3
+dc 下仁田
+end
+
+begin rail kashima-rinkai
+m kashima-stadium
+n 4
+nw 5
+dr 新鉾田
+nw 6
+dr 大洗
+nw 5
+n 4
+end
+
+begin rail others
+m katsuta-ibaraki
+e 2
+ne 1
+n 4
+dc 阿字ヶ浦
+end
+
+begin rail kanto-tetsudo
+m toride-ibaraki
+nw 12
+end
+
+begin rail kanto-tetsudo
+m sanuki-ibaraki
+se 3
+dc 竜ヶ崎
+end
+
+begin rail others
+m shimodate-ibaraki
+n 4
+dc 真岡
+n 2
+dc 益子
+n 2
+dc 茂木
+end
+
+############################# 東北 ###################################
+
+begin rail aizu-tetsudo
+m ozeguchi-fukushima
+n 4
+dc 会津田島
+n 4
+dc 会津下郷
+n 4
+box 西若松
+n 4
+end
+
+begin rail others
+m fukushima
+nw 4
+n 3
+ur 飯坂温泉
+end
+
+begin rail others
+m fukushima
+e 5
+dc 保原
+e 2
+ne 1
+n 2
+dc 丸森
+n 3
+dc 角田
+n 3
+end
+
+begin rail sendai-airport
+m natori-miyagi
+e 8
+box ✈仙台空港
+end
+
+begin rail sendai-nanboku
+m nagamachi-miyagi -3 3
+dr 富沢
+ne 3
+nw 2
+w 2
+nw 2
+n 9
+dr 泉中央
+end
+
+begin rail sendai-tozai
+m sendai -10 1
+dr 八木山動物公園
+e 17
+dr 荒井
+end
+
+begin rail konan-tetsudo
+m owani-aomori
+w 2
+nw 1
+n 2
+dr 中央弘前
+end
+
+begin rail tsugaru-tetsudo
+m goshogawara-aomori
+n 4
+dc 金木
+n 3
+dc 津軽中里
+end
+
+begin rail konan-tetsudo
+m hirosaki-aomori
+e 2
+ne 1
+n 2
+dc 黒石
+end
+
+############################# 北海道 ###################################
+
+begin rail others
+m hakodate -6 0
+dr 函館どつく前
+e 3
+dr 十字街 jujigai-hokkaido
+e 7
+dc 五稜郭公園前
+e 3
+dc 湯の川
+end
+
+begin rail others
+m jujigai-hokkaido
+s 3
+dc 谷地頭
+end
+
+begin rail-l others
+m jujigai-hokkaido -2 4
+dc 山麓
+w 2
+dc 山頂 
+end
+
+begin rail sapporo-nanboku
+m sapporo -1 -4
+ur 麻生
+s 7
+se 1
+box 大通 odori-sapporo
+sw 1
+s 1
+w 1
+box すすきの susukino-sapporo
+e 1
+s 3
+dc 真駒内
+end
+
+begin rail sapporo-toho
+m sapporo 1 -4
+ur 栄町
+s 7
+sw 1
+se 1
+s 4
+dc 福住
+end
+
+begin rail sapporo-tozai
+m odori-sapporo -6 0
+dr 宮の沢
+e 10
+end
+
+begin rail others
+m susukino-sapporo
+w 4
+s 4
+dc RW前
+e 3
+n 4
+end
+
+begin rail-l others
+m susukino-sapporo -5 5
+dc 山麓
+w 2
+dc 藻岩山頂
+end
+
+begin rail-l others
+m datemonbetsu 0 -2
+dc 有珠山頂
+e 2
+dc 昭和新山
+end
+
+begin rail-l others
+m kamikawa-hokkaido 3 3
+dc 層雲峡
+s 2
+dc 黒岳
+end
+
+begin rail-l others
+m kamikawa-hokkaido 2 6
+dc 姿見
+w 2
+dc 旭岳
+end
+

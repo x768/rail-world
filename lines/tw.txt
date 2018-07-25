@@ -1,0 +1,397 @@
+begin rail-h taiwan-hsl
+m $taoyuan-tw 37 14
+box 南港 nangang-taipei
+w 16
+sw 1
+lbox 台北 taipei 8 3
+w 2
+sw 5
+w 17
+lbox 高鐵桃園 taoyuan-hsr 9 3
+sw 2
+s 7
+box 高鐵新竹
+s 8
+sw 2
+box 高鐵苗栗
+sw 2
+s 14
+lbox 高鐵台中 taichung-thsr 9 3
+s 4
+sw 4
+s 6
+box 高鐵嘉義
+s 3
+se 6
+s 2
+box 高鐵台南
+s 6
+sw 3
+lbox 新左營 xin-zuoying 8 3
+end
+
+begin rail taiwan-rail
+m taipei
+sw 2
+w 4
+sw 3
+box 板橋 banqiao-taipei
+sw 6
+w 1
+dc 樹林
+w 5
+dc 桃園
+w 3
+box 中壢
+w 5
+sw 1
+s 5
+ur 北新竹 beihsinchu
+s 2
+ur 新竹
+s 3
+ur 竹南 zhunan
+se 4
+dc 苗栗
+s 3
+dc 三義 sanyi-hsinchu
+s 6
+dc 臺中
+s 4
+sw 1
+w 6
+sw 2
+end
+
+begin rail taiwan-rail
+m zhunan
+w 4
+sw 1
+s 3
+ur 後龍
+s 3
+ur 通霄
+s 3
+ur 苑裡
+s 3
+ur 清水
+s 3
+ur 追分 zhuifen-taichung
+s 4
+ur 彰化
+s 2
+ur 員林
+se 5
+dc 二水 ershui-changhua
+s 2
+dc 斗六
+s 3
+box 嘉義 chiayi
+s 2
+dc 新營
+s 1
+sw 4
+s 1
+dr 台南
+s 3
+dr 中洲 zhongzhou
+s 2
+dr 岡山
+s 3
+box 橋頭 qiaotou
+s 2
+se 2
+sw 2
+s 1
+se 1
+e 2
+box 高雄
+end
+
+begin rail taiwan-rail
+m ershui-changhua
+e 4
+dc 集集
+e 3
+dc 車埕 checheng
+end
+
+begin rail taiwan-rail
+m zhuifen-taichung
+se 2
+end
+
+begin rail taiwan-rail
+m beihsinchu
+e 3
+ur 竹中 zhuzhong-hsinchu
+e 5
+ur 內灣
+end
+
+begin rail taiwan-rail
+m zhuzhong-hsinchu
+n 3
+end
+
+begin rail taiwan-rail
+m sanyi-hsinchu
+e 3
+dc 泰安
+end
+
+begin rail taiwan-rail
+m zhongzhou
+e 6
+end
+
+begin rail taiwan-rail
+m taipei
+ne 3
+e 12
+se 4
+e 9
+dc 八堵 badu-taipei
+e 4
+dc 瑞芳 ruifang-taipei
+s 4
+dc 三貂嶺 sandiaoling
+s 14
+dc 宜蘭
+s 10
+dc 蘇澳新 suaoxin
+s 10
+dc 花蓮
+s 10
+dc 玉里
+s 10
+dc 台東
+s 10
+dc 太麻里
+s 7
+sw 2
+w 4
+dc 大武
+w 24
+dc 枋寮
+w 10
+dc 潮州
+w 10
+dc 屏東
+w 12
+end
+
+begin rail taiwan-rail
+m badu-taipei
+n 4
+ur 基隆
+end
+
+begin rail taiwan-rail
+m ruifang-taipei
+n 2
+ur 海科館
+end
+
+begin rail taiwan-rail
+m sandiaoling
+w 3
+dc 十分
+w 3
+dc 菁桐
+end
+
+begin rail taiwan-rail
+m suaoxin
+e 3
+dc 蘇澳
+end
+
+begin rail taiwan-alishan
+m chiayi
+e 4
+dc 竹崎
+e 3
+dc 奮起湖
+e 3
+dc 阿里山
+end
+
+begin rail taipei-bannan
+m banqiao-taipei 0 3
+dc 頂埔
+n 7
+ne 1
+e 2
+box 西門
+e 12
+box 忠孝新生
+e 5
+box 忠孝復興
+e 5
+ne 1
+e 5
+box 南港展覽館 nangang-exib
+end
+
+begin rail taipei-wenhu
+m nangang-exib
+n 5
+nw 3
+w 2
+dc 內湖
+w 6
+s 2
+box ✈松山機場
+s 11
+box 大安
+s 2
+se 2
+e 4
+box 動物園 taipei-zoo
+end
+
+begin rail taipei-songshan
+m nangang-taipei -2 -2
+box 松山
+nw 2
+w 2
+box 南京復興
+w 5
+box 松江南京
+w 6
+box 中山
+w 6
+s 9
+e 6
+box 中正紀念堂
+se 3
+box 古亭
+se 3
+s 1
+dc 七張 qizhang-taipei
+s 2
+dc 新店 xindian-taipei
+end
+
+begin rail taipei-tamsui
+m nangang-taipei -2 5
+dc 象山
+w 9
+box 東門
+w 6
+n 11
+box 民權西路
+n 3
+dr 北投 beitou-taipei
+n 3
+dr 淡水
+end
+
+begin rail taipei-tamsui
+m beitou-taipei
+e 3
+uc 新北投
+end
+
+begin rail taipei-songshan
+m qizhang-taipei
+w 3
+dc 小碧潭
+end
+
+begin rail taipei-zhonghe
+m qizhang-taipei -6 1
+dc 南勢角
+n 2
+ne 6
+n 11
+w 14
+uc 大橋頭 daqiaotou-taipei
+sw 3
+box 三重
+sw 6
+dc 迴龍
+end
+
+begin rail taipei-zhonghe
+m daqiaotou-taipei
+nw 4
+uc 蘆洲
+end
+
+begin rail-l taipei-maokong
+m taipei-zoo 0 2
+box 動物園 taipei-zoo
+s 2
+dc 貓空
+end
+
+begin rail taoyuan-airport
+m taipei -3 -3
+box 台北車站 taipei
+nw 1
+w 12
+uc 新北產業園區
+w 3
+uc 長庚醫院
+w 5
+box ✈第一航廈
+s 2
+box ✈第二航廈
+s 10
+dc 環北
+end
+
+begin rail kaohsiung-red
+m qiaotou 2 -2
+dc 南岡山
+sw 2
+se 3
+s 7
+box 美麗島
+s 3
+box 凱旋 kaisyuan-kaohsiung
+s 2
+box ✈高雄國際機場
+s 1
+se 1
+e 2
+dc 小港
+end
+
+begin rail kaohsiung-lr
+m kaisyuan-kaohsiung 4 0
+box 籬仔內
+w 9
+nw 1
+n 2
+box 哈瑪星/西子灣 hamasen-kaohsiung
+end
+
+begin rail kaohsiung-orange
+m hamasen-kaohsiung
+e 12
+dc 大寮
+end
+
+begin rail-l others
+m checheng 4 -1
+dc 日月潭
+n 2
+dc 九族文化村
+end
+
+begin rail others
+m xindian-taipei 0 6
+dc 烏來
+s 3
+dc 瀑布 wulai-waterfall
+end
+
+begin rail-l others
+m wulai-waterfall
+s 2
+dc 雲仙樂園
+end
+

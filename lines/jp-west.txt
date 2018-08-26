@@ -85,7 +85,9 @@ s 3
 box 山田
 s 11
 box 天六 tenroku-osaka
-s 6
+s 3
+box 扇町 tenma-osaka
+s 3
 box 南森町
 s 8
 box 堺筋本町
@@ -121,8 +123,8 @@ end
 
 begin rail hankyu
 m shukugawa-hyogo
-n 2
-uc 甲陽
+n 3
+dr 甲陽園
 end
 
 begin rail hankyu
@@ -155,9 +157,7 @@ w 3
 box 関目
 w 3
 box 野江
-w 3
-box 京橋
-w 3
+w 6
 box 天満橋 tenmabashi-osaka
 sw 2
 w 2
@@ -771,9 +771,7 @@ m taishibashi-imaichi 0 -2
 uc 井高野
 s 12
 box 蒲生4 gamo4-osaka
-s 2
-box 鴫野
-s 2
+s 4
 box 緑橋
 s 5
 box 今里
@@ -794,9 +792,9 @@ dc 南巽
 end
 
 begin rail osaka-chuo
-m bentencho-osaka -2 8
-box 宇宙広場 cosmo-osaka
-n 7
+m bentencho-osaka -2 7
+box コスモ cosmo-osaka
+n 6
 ne 1
 e 40
 box 高井田
@@ -806,9 +804,11 @@ end
 
 begin rail osaka-nanko
 m cosmo-osaka
-s 6
-box フェリー
-e 12
+s 5
+uc フェリー
+s 1
+se 1
+e 11
 end
 
 begin rail osaka-nagahori
@@ -1273,7 +1273,29 @@ end
 begin rail others
 m tateyama-toyama
 e 3
-dr 美女平
+dr 美女平 bijodaira-toyama
+end
+
+begin rail others
+m bijodaira-toyama 0 3
+dr 室堂
+e 2
+dr 大観峰
+del rail
+add rail-l
+e 2
+dr 黒部平
+del rail-l
+add rail
+e 2
+dr 黒部湖 kurobeko-toyama
+end
+
+begin rail others
+m kurobeko-toyama 2 0
+dr 黒部ダム
+e 2
+dr 扇沢
 end
 
 begin rail others
@@ -1386,13 +1408,13 @@ nw 2
 w 6
 sw 1
 s 5
-dc 高畑
+dr 高畑
 end
 
 begin rail nagoya-sakura
-m nagoya -7 1
-dc 中村区役所
-e 8
+m nagoya -4 1
+dr 中村区役所
+e 5
 n 2
 e 5
 box 丸の内 marunouchi-aichi
@@ -1701,6 +1723,14 @@ begin rail okayama-seikibashi
 m yanagawa-okayama
 s 3
 dc 清輝橋
+end
+
+begin rail others
+m kurashiki-okayama
+s 3
+dc 水島
+s 2
+dc 三菱自工前
 end
 
 begin rail bataden
@@ -2206,6 +2236,13 @@ ne 1
 e 1
 ur 古島
 se 2
-dc 首里
+dc 首里 shuri-okinawa
+end
+
+begin rail yui-rail-light
+m shuri-okinawa
+ne 3
+n 2
+dc 浦西
 end
 

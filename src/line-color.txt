@@ -6,6 +6,7 @@ jr-east #0c8c11
 jr-east-light #8ccc91
 jr-central #ff7000
 jr-west #0072bc
+jr-west-light #80c2dc
 jr-shikoku #1cadca
 jr-kyushu #ff0000
 
@@ -174,6 +175,7 @@ sapporo-toho #2294d1
 kumamoto-tram #008000
 
 yui-rail #ff0000
+yui-rail-light #ff8080
 
 ########################### 台湾 #############################
 taiwan-hsl #db5426
@@ -291,4 +293,7 @@ beijing-yizhuang #d6006e
 beijing-changping #de85bb
 beijing-fangshan #dc6016
 beijing-xijiao #e1261c
+
+shinjiazhuang-1 #e53e30
+shinjiazhuang-2 #00a1e0
 

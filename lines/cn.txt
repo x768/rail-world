@@ -150,7 +150,9 @@ box 唐山
 sw 1
 s 5
 sw 1
-w 9
+w 4
+box 滨海
+w 5
 sw 1
 lbox 天津 tianjin 8 3
 nw 3
@@ -186,7 +188,22 @@ w 10
 sw 2
 s 15
 box 天津南
-s 10
+s 5
+box 沧州西
+s 4
+box 德州东 dezhou-west-shandong
+s 6
+box 济南西
+s 6
+box 徐州东
+s 6
+end
+
+begin rail-h china-rail
+m dezhou-west-shandong
+w 20
+box 衡水北
+w 18
 end
 
 begin rail china-rail
@@ -497,14 +514,73 @@ end
 begin rail china-rail
 m tianjin-west -12 6
 sw 2
-w 10
-dc 霸州西
-w 10
+w 30
+ur 霸州西
+w 5
 dc 白洋淀
-w 10
+w 5
 dc 徐水
 s 12
 dc 保定
+end
+
+begin rail china-rail
+m beijing-south
+sw 3
+s 8
+dr 黄村
+se 2
+e 5
+se 3
+uc 霸州 bazhou-hebei
+s 23
+end
+
+begin rail china-rail
+m bazhou-hebei
+e 18
+ne 13
+e 10
+uc 北仓
+end
+
+begin rail china-rail
+m tianjin-west -15 8
+sw 2
+s 12
+dc 沧州
+s 6
+dc 德州 dezhou-shandong
+s 4
+end
+
+begin rail china-rail
+m dezhou-shandong
+w 18
+dc 衡水 hengshui-hebei
+w 2
+dr 衡水西
+w 3
+nw 1
+n 2
+nw 1
+w 2
+ur 辛集
+w 2
+ur 晋州
+w 2
+ur 藁城
+w 8
+end
+
+begin rail china-rail
+m hengshui-hebei
+s 4
+dc 聊城北
+s 4
+dc 菏泽
+s 4
+dc 商丘南
 end
 
 ################################# 地铁 ######################################

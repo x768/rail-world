@@ -22,7 +22,7 @@ box 岐阜羽島
 se 6
 s 7
 se 8
-lbox 名古屋 nagoya 12 3
+lbox 名古屋 nagoya 10 3
 sw 1
 s 12
 se 1
@@ -32,7 +32,7 @@ s 4
 se 1
 e 6
 se 1
-lbox 三河安城 mikawa-anjo 9 3
+box 三河安城
 ne 1
 e 10
 se 1
@@ -92,7 +92,7 @@ w 18
 nw 4
 w 5
 sw 7
-lbox 西明石 nishi-akashi 8 3
+box 西明石
 sw 1
 w 10
 nw 2
@@ -102,7 +102,7 @@ lbox 岡山 okayama 8 3
 nw 1
 w 7
 sw 1
-lbox 新倉敷 shin-kurashiki 8 3
+box 新倉敷
 nw 1
 w 5
 sw 1
@@ -267,7 +267,7 @@ lbox 一ノ関 ichinoseki-iwate 8 3
 nw 1
 n 7
 ne 1
-lbox 北上 kitakami-iwate 8 3
+box 北上 kitakami-iwate
 ne 1
 n 5
 box 新花巻
@@ -281,7 +281,7 @@ box 沼宮内
 w 1
 n 4
 ne 1
-lbox 二戸 ninohe-iwate 8 3
+box 二戸
 nw 1
 n 8
 ne 1
@@ -314,7 +314,7 @@ m fukushima
 w 10
 nw 1
 n 3
-lbox 米沢 yonezawa 8 3
+box 米沢
 n 4
 box 赤湯 akayu-yamagata
 n 7
@@ -393,7 +393,7 @@ end
 
 begin rail jr-west
 m 0 0
-lbox 京都 kyoto 10 3
+lbox 京都 kyoto 9 3
 w 7
 sw 2
 s 2
@@ -425,9 +425,9 @@ box 新長田 shin-nagata
 w 13
 nw 3
 box 明石
-w 3
+w 4
 nw 2
-w 6
+w 5
 ur 加古川 kakogawa
 w 6
 sw 1
@@ -450,8 +450,11 @@ sw 1
 w 1
 dr 東岡山
 w 12
-dc 倉敷 kurashiki-okayama
-w 17
+box 倉敷 kurashiki-okayama
+w 3
+nw 1
+sw 1
+w 12
 dc 尾道
 w 10
 dc 西条
@@ -531,9 +534,13 @@ n 4
 box 鶴橋
 n 5
 box 森ノ宮 morinomiya-osaka
-n 10
+n 6
+box 京橋
+n 4
 nw 2
-w 13
+w 2
+box 天満 tenma-osaka
+w 11
 end
 
 begin rail jr-west
@@ -551,8 +558,10 @@ end
 
 begin rail jr-west
 m morinomiya-osaka 0 -2
-e 9
-box 放出 hanaten-osaka
+e 6
+box 鴫野 shigino-osaka
+e 3
+box 放出
 e 3
 ne 1
 e 7
@@ -565,20 +574,11 @@ e 6
 end
 
 begin rail jr-west
-m hanaten-osaka
-s 5
-se 2
-s 2
-box 永和
-s 6
-end
-
-begin rail jr-west
 m tennoji-osaka
 e 6
 se 3
 e 5
-box 久宝寺
+box 久宝寺 kyuhoji-osaka
 s 3
 box 柏原
 e 10
@@ -588,6 +588,25 @@ ne 11
 e 4
 box 奈良 nara
 n 4
+end
+
+begin rail jr-west
+m kyuhoji-osaka
+n 6
+box 永和
+n 2
+nw 2
+n 5
+end
+
+begin rail jr-west-light
+m shigino-osaka
+nw 3
+n 6
+nw 4
+w 5
+nw 3
+n 3
 end
 
 begin rail jr-west
@@ -998,7 +1017,7 @@ end
 begin rail jr-west
 m okayama
 s 11
-ur 茶屋町 chayamachi-okayama
+dc 茶屋町 chayamachi-okayama
 s 3
 box 児島 kojima-okayama
 end
@@ -1253,7 +1272,7 @@ e 4
 ur 蟹江
 e 4
 box 八田
-e 6
+e 8
 end
 
 begin rail jr-central
@@ -1297,7 +1316,10 @@ s 14
 dr 大府 oobu-aichi
 e 5
 box 刈谷
-e 12
+e 4
+ne 1
+se 1
+e 6
 box 岡崎 okazaki-aichi
 e 2
 se 1
@@ -1594,7 +1616,7 @@ n 1
 ne 2
 n 1
 ne 1
-e 5
+e 9
 ne 3
 end
 
@@ -1851,7 +1873,10 @@ n 2
 box 好摩 koma-iwate
 n 5
 dc 一戸
-n 7
+n 2
+nw 1
+ne 1
+n 3
 box 目時 metoki-aomori
 end
 
@@ -1893,7 +1918,7 @@ end
 begin rail jr-east
 m koma-iwate
 w 11
-dr 大更
+ur 大更
 w 10
 nw 1
 n 1

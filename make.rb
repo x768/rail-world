@@ -330,16 +330,18 @@ EOS
               stn_link_name[a[2]] = [x, y]
             end
           end
-#        when 'on'
-#          a.shift
-#          out.print "L", x, ",", y, '"/>', "\n"
-#          prev_dst = nil
-#          out.print '<path class="', path_class.join(' '), '" d="M', x, ",", y, " "
-#        when 'off'
-#          a.shift
-#          out.print "L", x, ",", y, '"/>', "\n"
-#          prev_dst = nil
-#          out.print '<path class="', path_class.join, '" d="M', x, ",", y, " "
+        when 'add'
+          a.shift
+          out.print "L", x, ",", y, '"/>', "\n"
+          prev_dst = nil
+          path_class += a
+          out.print '<path class="', path_class.join(' '), '" d="M', x, ",", y, " "
+        when 'del'
+          a.shift
+          out.print "L", x, ",", y, '"/>', "\n"
+          prev_dst = nil
+          path_class -= a
+          out.print '<path class="', path_class.join, '" d="M', x, ",", y, " "
         when 'n', 'nw', 'ne', 's', 'sw', 'se', 'w', 'e'
           if !prev_dst || prev_dst != a[0]
             out.print "L", x, ",", y, " "

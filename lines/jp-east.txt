@@ -107,7 +107,11 @@ end
 begin rail odakyu
 m odawara
 n 7
-e 9
+e 3
+ur 渋沢
+e 3
+ur 伊勢原
+e 3
 ne 1
 n 2
 ne 1
@@ -452,9 +456,9 @@ end
 
 begin rail tokyu
 m sakgenjaya-tokyo
-w 2
-nw 6
-n 4
+w 3
+nw 5
+n 5
 end
 
 begin rail sotetsu

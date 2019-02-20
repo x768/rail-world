@@ -554,13 +554,13 @@ end
 
 begin rail kintetsu
 m yamato-yagi
-e 11
+e 12
 dc 榛原
-e 2
-dc 名張
 e 4
+dc 名張
+e 5
 box 伊賀神戸
-e 13
+e 9
 dr 伊勢中川 ise-nakagawa
 se 10
 box 伊勢市

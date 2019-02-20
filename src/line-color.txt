@@ -98,6 +98,7 @@ isumi-tetsudo #ffd400
 kashima-rinkai #ff0000
 kominato-tetsudo #ff6347
 sanriku-tetsudo #ff0000
+sanriku-tetsudo-light #ff8080
 iwate-ginga #03459a
 aoimori #33cbf4
 kumagawa #00ccff

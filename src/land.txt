@@ -345,6 +345,7 @@ w 3
 n 10
 end
 
+# セントレア
 begin
 m $tokoname-jp -1 1
 s 4
@@ -391,6 +392,7 @@ s 12
 w 16
 end
 
+# 北朝鮮
 begin
 m $goseong-kr
 nw 40
@@ -424,7 +426,7 @@ w 17
 n 30
 w 6
 sw 34
-s 40
+s 70
 w *
 n *
 m -300 ^

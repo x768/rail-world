@@ -457,7 +457,7 @@ sw 1
 w 12
 dc 尾道
 w 10
-dc 西条
+dc 白市
 w 3
 dc 瀬野 seno-hiroshima
 w 2
@@ -599,7 +599,7 @@ nw 2
 n 5
 end
 
-begin rail jr-west-light
+begin rail jr-west
 m shigino-osaka
 nw 3
 n 6
@@ -905,11 +905,11 @@ s 2
 dc 玉水
 s 3
 box 木津
-e 6
+e 8
 dc 笠置
-e 6
+e 8
 box 伊賀上野 iga-ueno
-e 10
+e 6
 e 4
 box 亀山
 end
@@ -1031,9 +1031,9 @@ end
 begin rail jr-west
 m kurashiki-okayama
 n 6
-box 清音 kiyone-okayama
+box 清音
 n 4
-dr 総社
+box 総社 soja-okayama
 n 6
 dr 備中高梁
 n 6
@@ -1050,6 +1050,7 @@ m fukuyama-hiroshima
 n 5
 box 神辺
 n 6
+dr 府中
 nw 12
 ur 塩町
 end
@@ -1057,7 +1058,11 @@ end
 begin rail jr-west
 m hiroshima
 n 11
-ne 9
+ne 3
+ur 狩留家
+ne 3
+ur 向原
+ne 3
 ur 三次
 ne 3
 e 5
@@ -1844,7 +1849,7 @@ dc 陸前高田
 n 2
 dc 大船渡
 n 2
-box 盛 sakari-iwate
+box 盛
 end
 
 begin rail jr-east
@@ -2247,7 +2252,7 @@ dc 喜多方
 e 4
 dc 塩川
 e 6
-box 会津若松
+dc 会津若松
 e 8
 end
 
@@ -2357,7 +2362,7 @@ dc 土沢
 e 10
 dc 遠野
 e 10
-box 釜石
+box 釜石 kamaishi-iwate
 end
 
 begin rail jr-east
@@ -2633,9 +2638,10 @@ e 5
 dc 会津柳津
 e 5
 dc 会津坂下
-e 6
-ne 1
-n 8
+e 3
+ne 5
+box 西若松
+n 4
 end
 
 begin rail jr-east
@@ -3074,9 +3080,9 @@ begin rail jr-shikoku
 m kojima-okayama
 s 8
 ur 宇多津 utazu-kagawa
-e 4
-ur 坂出
-e 4
+e 3
+dc 坂出 sakaide-kagawa
+e 5
 box 高松 takamatsu-kagawa
 sw 1
 s 5
@@ -3123,6 +3129,11 @@ w 4
 dc 牟岐
 w 4
 box 海部 kaifu-tokushima
+end
+
+begin rail jr-shikoku
+m sakaide-kagawa
+nw 3
 end
 
 begin rail jr-shikoku
@@ -3687,11 +3698,21 @@ end
 
 begin rail tango
 m toyooka-hyogo
-e 24
+e 6
+uc 久美浜
+e 4
+uc 網野
+e 4
+uc 峰山
+e 4
+uc 京丹後大宮
+e 6
 ne 1
 n 2
 ne 1
-e 22
+e 16
+ur 与謝野
+e 6
 ur 天橋立 amanohashidate
 e 20
 end
@@ -3843,13 +3864,18 @@ dc 矢島
 end
 
 begin rail sanriku-tetsudo
-m sakari-iwate
-n 8
+m kuji-iwate
+s 12
+end
+
+begin rail sanriku-tetsudo-light
+m miyako-iwate
+s 6
 end
 
 begin rail sanriku-tetsudo
-m kuji-iwate
-s 12
+m kamaishi-iwate
+s 8
 end
 
 begin rail others
@@ -3860,7 +3886,10 @@ n 6
 end
 
 begin rail ibara
-m kiyone-okayama
+m soja-okayama
+sw 1
+s 2
+se 1
 w 4
 dc 矢掛
 w 4

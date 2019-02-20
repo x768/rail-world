@@ -514,11 +514,11 @@ end
 begin rail china-rail
 m tianjin-west -12 6
 sw 2
-w 30
+w 25
 ur 霸州西
-w 5
+w 10
 dc 白洋淀
-w 5
+w 10
 dc 徐水
 s 12
 dc 保定

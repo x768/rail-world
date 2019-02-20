@@ -697,22 +697,22 @@ n 7
 ne 3
 ne 5
 box 大鷹の森
-ne 7
-e 4
+ne 6
+e 6
 box 守谷
 e 4
-dc つくば tsukuba-ibaraki
+ur つくば tsukuba-ibaraki
 end
 
 begin rail keisei
-m tsukuba-ibaraki -1 -3
+m tsukuba-ibaraki -2 -4
 dc 宮脇
 n 2
 dc 筑波山頂
 end
 
 begin rail-l keisei
-m tsukuba-ibaraki 1 -5
+m tsukuba-ibaraki 0 -6
 dc 女体山
 e 2
 dc つつじヶ丘
@@ -1177,9 +1177,9 @@ n 2
 ur 新鹿沼
 n 6
 ur 下今市 shimoimaichi-tochigi
-n 2
-ur 鬼怒川温泉
 n 3
+ur 鬼怒川温泉
+n 4
 box 新藤原 shin-fujiwara-tochigi
 end
 
@@ -1326,8 +1326,7 @@ end
 
 begin rail chiba-monorail
 m chiba
-se 2
-s 1
+se 3
 dc 県庁前
 end
 
@@ -1362,7 +1361,7 @@ se 1
 e 1
 box 船橋 funabashi-chiba
 e 4
-box 津田沼
+box 津田沼 tsudanuma-chiba
 ne 1
 n 3
 ne 1
@@ -1377,6 +1376,17 @@ ne 2
 e 6
 se 1
 s 3
+end
+
+begin rail keisei
+m tsudanuma-chiba
+se 2
+e 2
+se 1
+s 7
+se 1
+e 3
+dc ちはら台
 end
 
 begin rail keisei
@@ -1503,7 +1513,13 @@ end
 
 begin rail kanto-tetsudo
 m toride-ibaraki
-nw 12
+nw 6
+uc 水海道
+nw 2
+dr 石下
+nw 2
+dr 下妻
+nw 2
 end
 
 begin rail kanto-tetsudo
@@ -1528,11 +1544,9 @@ begin rail aizu-tetsudo
 m ozeguchi-fukushima
 n 4
 dc 会津田島
-n 4
+n 3
 dc 会津下郷
-n 4
-box 西若松
-n 4
+n 3
 end
 
 begin rail others

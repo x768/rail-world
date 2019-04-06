@@ -1,16 +1,17 @@
-(function(fn) {
+'use strict';
+
+(fn => {
     if (document.readyState !== 'loading'){
         fn();
     } else {
         document.addEventListener('DOMContentLoaded', fn);
     }
-})(function() {
-    var main = document.getElementById('main');
-    var layer_station = document.getElementById('layer-station');
-    var current_scroll = {x: -7130, y: -3320};
-    var down_point = null;
-    var scale = 1;
-
+})(() => {
+    let main = document.getElementById('main');
+    let layer_station = document.getElementById('layer-station');
+    let current_scroll = {x: -7130, y: -3320};
+    let down_point = null;
+    let scale = 1;
 
     function update_transform() {
         main.setAttribute('transform', 'translate(' + current_scroll.x + ',' + current_scroll.y + ') scale(' + scale + ')');
@@ -21,17 +22,17 @@
         }
     }
 
-    document.addEventListener('mousedown', function(e) {
+    document.addEventListener('mousedown', e => {
         if (e.button === 0) {
             down_point = {x: e.clientX, y: e.clientY};
         }
     });
-    document.addEventListener('mouseup', function(e) {
+    document.addEventListener('mouseup', e => {
         if (e.button === 0) {
             down_point = null;
         }
     });
-    document.addEventListener('mousemove', function(e) {
+    document.addEventListener('mousemove', e => {
         if (down_point !== null) {
             current_scroll.x += e.clientX - down_point.x;
             current_scroll.y += e.clientY - down_point.y;
@@ -40,9 +41,9 @@
             update_transform();
         }
     });
-    document.addEventListener('wheel', function(e) {
-        var prevX = (current_scroll.x - e.clientX) / scale;
-        var prevY = (current_scroll.y - e.clientY) / scale;
+    document.addEventListener('wheel', e => {
+        let prevX = (current_scroll.x - e.clientX) / scale;
+        let prevY = (current_scroll.y - e.clientY) / scale;
         if (e.deltaY < 0) {
             if (scale < 1) {
                 scale *= 2;

@@ -19,6 +19,11 @@ rail-worldは、ただの鉄道路線図です。
 rubyをインストールしてください。
 
 ```
+# SVGを作成
 ruby make.rb
+# SVG(HTML5 embedded)を作成
+ruby mkhtml.rb
 ```
+
+![rail-world](map-sample.png)
 

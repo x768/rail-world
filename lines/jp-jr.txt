@@ -3865,17 +3865,7 @@ end
 
 begin rail sanriku-tetsudo
 m kuji-iwate
-s 12
-end
-
-begin rail sanriku-tetsudo-light
-m miyako-iwate
-s 6
-end
-
-begin rail sanriku-tetsudo
-m kamaishi-iwate
-s 8
+s 26
 end
 
 begin rail others

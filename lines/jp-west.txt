@@ -1707,6 +1707,13 @@ w 2
 dr 山上(城崎RW)
 end
 
+begin rail-l others
+m gifu 4 -4
+ur 金華山麓
+e 2
+ur 金華山頂
+end
+
 ############################# 中国(岡山以西) ###################################
 
 begin rail okayama-higashiyama

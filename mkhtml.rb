@@ -108,6 +108,11 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 svg {
   margin: 0;
   padding: 0;

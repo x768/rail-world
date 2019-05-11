@@ -285,7 +285,17 @@ box 民權西路
 n 3
 dr 北投 beitou-taipei
 n 3
-dr 淡水
+box 紅樹林 hongshulin
+n 2
+box 淡水
+end
+
+begin rail taipei-lr
+m hongshulin
+e 3
+ne 1
+n 3
+uc 崁頂
 end
 
 begin rail taipei-tamsui

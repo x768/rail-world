@@ -189,6 +189,7 @@ taipei-songshan #008659
 taipei-bannan #0070bd
 taipei-zhonghe #f8b61c
 taipei-maokong #77bc1f
+taipei-lr #e5554f
 
 taoyuan-airport #8e47ad
 

@@ -1,11 +1,11 @@
 # charset: UTF-8
 
 
-FONT_W = 6
-FONT_H = 12
 LINE_H = 13
 STEP = 12
 CIRCLE_R = 4
+
+FILES = ["jp-jr", "jp-west", "jp-east", "tw", "kr", "kp", "cn"]
 
 #----------------------------------------------
 
@@ -28,7 +28,7 @@ def draw_stations(out, stn, stn_link)
     out.print '<path class="stn-link" d="M', a[0], ',', a[1], ' L', a[2], ',', a[3], '"/>', "\n"
   end
   for a in stn
-    base = FONT_H / 2 - 1
+    base = 5
     name = a[3]
     name = name.gsub('_', ' ')
 
@@ -38,7 +38,7 @@ def draw_stations(out, stn, stn_link)
       out.print '<rect class="stn" x="', a[1] - width / 2, '" y="', a[2] - LINE_H / 2 - 1, '" width="', width, '" height="', LINE_H + 2, '"/>', "\n"
       out.print '<text class="stn-name" text-anchor="middle" x="', a[1], '" y="', a[2] + base, '" title="', (a[1] / STEP) - OFFSET_X, ',', (a[2] / STEP) - OFFSET_Y, '">', name, '</text>', "\n"
     when 'lbox'
-      width = a[4] * FONT_W + 4
+      width = a[4] * 6 + 4
       height = a[5] * LINE_H + 2
       out.print '<rect class="stn" x="', a[1] - width / 2, '" y="', a[2] - height / 2 - 1, '" width="', width, '" height="', height, '"/>', "\n"
       out.print '<text class="stn-name" text-anchor="middle" x="', a[1], '" y="', a[2] + base, '" title="', (a[1] / STEP) - OFFSET_X, ',', (a[2] / STEP) - OFFSET_Y, '">', name, '</text>', "\n"
@@ -70,6 +70,8 @@ def draw_stations(out, stn, stn_link)
   end
 end
 
+# --------------------------------------------------------------------------------------
+
 open("src/size.txt", "r") do |f|
   f.each_line do|line|
     line.chomp!
@@ -94,18 +96,26 @@ stn = []
 stn_link_name = {}
 stn_link = []
 
-open("map.svg", "w") do |out|
-  out.print <<EOS
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:svg="http://www.w3.org/2000/svg"
-     version="1.1"
-EOS
-  out.print '     width="', WIDTH * STEP, '" height="', HEIGHT * STEP, '">', "\n"
+# --------------------------------------------------------------------------------------
 
- out.print <<EOS
-<style type="text/css">
+open("out/style.css", "w") do |out|
+  out.print <<EOS
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 svg {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   font-family: 'Noto Sans CJK';
 }
 .land {
@@ -128,17 +138,13 @@ svg {
   stroke-width: 12px;
   fill: none;
 }
-/*
-.not-used {
-  stroke-opacity: 0.25;
-}
-*/
 .stn {
   fill: white;
 }
 .stn-name {
   font-size: 12px;
   fill: black;
+  cursor: default;
 }
 .stn-name-p {
   font-size: 12px;
@@ -165,14 +171,39 @@ EOS
     end
     out.print ".others {\n  stroke: #808080;\n}\n"
   end
+end
 
-  out.print "</style>\n"
+# --------------------------------------------------------------------------------------
 
+open("out/map.html", "w") do |out|
+  out.print <<EOS
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>rail-world</title>
+<style type="text/css"> @import "style.css"; </style>
+<script src="map.js"></script>
+</head>
+<body>
+EOS
+
+  out.print '<svg width="', WIDTH * STEP, '" height="', HEIGHT * STEP, '">', "\n"
+
+  out.print <<EOS
+<g id="main">
+EOS
+
+  # --------------------------------------------------------------------------------------
   # 海
+  out.print '<g id="layer-sea">', "\n"
   out.print '<rect x="0" y="0" width="', WIDTH * STEP, '" height="', HEIGHT * STEP, '" class="sea"/>', "\n"
+  out.print '</g>', "\n"
+  # --------------------------------------------------------------------------------------
   # 陸地
   first = false
   output = false
+  out.print '<g id="layer-land">', "\n"
   open("src/land.txt", "r") do |f|
     f.each_line do |line|
       line.chomp!
@@ -278,9 +309,79 @@ EOS
       end
     end
   end
+  out.print '</g>', "\n"
 
+  # --------------------------------------------------------------------------------------
+  # 名前と位置の対応
+  for file in FILES do
+    open("lines/" + file + ".txt", "r") do |f|
+      linenum = 0
+      f.each_line do |line|
+        linenum += 1
+        line.chomp!
+        next if line.empty? || line.match(/^#/)
+
+        a = line.split(" ")
+        case a[0]
+        when 'm'
+          if a[1].match?(/^-?\d+$/)
+            x = (a[1].to_i + OFFSET_X) * STEP
+            y = (a[2].to_i + OFFSET_Y) * STEP
+          else
+            if stn_link_name.has_key?(a[1])
+              b = stn_link_name[a[1]]
+              x = b[0]
+              y = b[1]
+              if a.size >= 4
+                x += a[2].to_i * STEP
+                y += a[3].to_i * STEP
+              end
+            else
+              raise "Station name #{a[1]} not found"
+            end
+          end
+        when 'box', 'lbox', 'uc', 'dc', 'ur', 'dr'
+          if a.size >= 3
+            if stn_link_name.has_key?(a[2])
+              b = stn_link_name[a[2]]
+              stn_link.push [x, y, b[0], b[1]]
+            else
+              stn_link_name[a[2]] = [x, y]
+            end
+          end
+        when 'n', 'nw', 'ne', 's', 'sw', 'se', 'w', 'e'
+          n = a[1].to_i * STEP
+          case a[0]
+          when 'n'
+            y -= n
+          when 'nw'
+            x -= n
+            y -= n
+          when 'ne'
+            x += n
+            y -= n
+          when 's'
+            y += n
+          when 'sw'
+            x -= n
+            y += n
+          when 'se'
+            x += n
+            y += n
+          when 'w'
+            x -= n
+          when 'e'
+            x += n
+          end
+        end
+      end
+    end
+  end
+
+  # --------------------------------------------------------------------------------------
   # 路線
-  for file in ["jp-jr", "jp-west", "jp-east", "tw", "kr", "kp", "cn"] do
+  out.print '<g id="layer-line">', "\n"
+  for file in FILES do
     open("lines/" + file + ".txt", "r") do |f|
       path_class = []
       linenum = 0
@@ -321,14 +422,6 @@ EOS
             stn.push [a[0], x, y, a[1], a[3].to_i, a[4].to_i]
           else
             stn.push [a[0], x, y, a[1]]
-          end
-          if a.size >= 3
-            if stn_link_name.has_key?(a[2])
-              b = stn_link_name[a[2]]
-              stn_link.push [x, y, b[0], b[1]]
-            else
-              stn_link_name[a[2]] = [x, y]
-            end
           end
         when 'add'
           a.shift
@@ -377,8 +470,17 @@ EOS
     end
   end
 
+  out.print '</g>', "\n"
+
   # 駅
+  out.print '<g id="layer-station">', "\n"
   draw_stations out, stn, stn_link
-  out.print "</svg>\n"
+  out.print '</g>', "\n"
+  out.print <<EOS
+</g>
+</svg>
+</body>
+</html>
+EOS
 end
 

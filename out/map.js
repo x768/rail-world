@@ -7,8 +7,8 @@
         document.addEventListener('DOMContentLoaded', fn);
     }
 })(() => {
-    let main = document.getElementById('main');
-    let layer_station = document.getElementById('layer-station');
+    const main = document.getElementById('main');
+    const layer_station = document.getElementById('layer-station');
     let current_scroll = {x: -7130, y: -3320};
     let down_point = null;
     let scale = 1;

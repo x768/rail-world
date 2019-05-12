@@ -172,7 +172,14 @@ begin rail-h china-rail
 m beijing-south -9 -5
 lbox 北京西 beijing-west 8 3
 nw 2
-w 10
+w 4
+sw 1
+s 12
+se 4
+s 15
+box 保定东
+s 7
+sw 3
 end
 
 begin rail-h china-rail
@@ -191,19 +198,47 @@ box 天津南
 s 5
 box 沧州西
 s 4
-box 德州东 dezhou-west-shandong
-s 6
-box 济南西
-s 6
+box 德州东 dezhou-east-shandong
+s 8
+box 济南西 jinan-west-shandong
+s 10
+box 泰安
+s 12
 box 徐州东
 s 6
+box 蚌埠南
+s 18
+lbox 南京南 nanjing-south 8 3
 end
 
 begin rail-h china-rail
-m dezhou-west-shandong
+m jinan-west-shandong
+e 2
+se 2
+e 8
+box 淄博 jibo-shandong
+e 6
+box 潍坊
+e 6
+box 高密
+e 6
+box 胶州北
+e 5
+se 1
+s 2
+lbox 青岛北 qingdao-north 8 3
+s 6
+box 青岛
+end
+
+begin rail-h china-rail
+m dezhou-east-shandong
 w 20
 box 衡水北
-w 18
+w 22
+box 石家庄东
+w 3
+nw 2
 end
 
 begin rail china-rail
@@ -519,9 +554,10 @@ ur 霸州西
 w 10
 dc 白洋淀
 w 10
-dc 徐水
-s 12
-dc 保定
+ur 徐水
+s 6
+ur 保定
+s 15
 end
 
 begin rail china-rail
@@ -550,17 +586,133 @@ sw 2
 s 12
 dc 沧州
 s 6
-dc 德州 dezhou-shandong
+dr 德州 dezhou-shandong
+s 11
+se 1
+e 9
 s 4
+box 泰山 taishan-shandong
+s 2
+sw 1
+w 8
+sw 1
+s 2
+box 磁窑
+s 3
+dc 兗州
+s 3
+box 徐州
+s 3
+dc 蚌埠
+s 4
+dc 永宁镇
+s 7
+box 南京 nanjing
+end
+
+begin rail china-rail
+m taishan-shandong 0 -2
+n 6
+box 济南 jinan-shandong
+n 4
+nw 1
+w 9
+end
+
+begin rail china-rail
+m jinan-shandong 2 0
+se 1
+e 3
+ne 1
+se 1
+e 4
+ne 1
+se 1
+e 4
+ne 1
+se 1
+s 1
+se 1
+e 2
+box 胶州
+e 4
+box 蓝村 lancun-shandong
+e 4
+end
+
+begin rail china-rail
+m jibo-shandong 0 4
+dc 八陡
+n 2
+dc 博山
+n 8
+dc 博兴
+n 7
+dc 东营
+end
+
+begin rail china-rail
+m taishan-shandong
+e 6
+dc 莱芜东
+e 3
+ne 1
+n 6
+end
+
+begin rail china-rail
+m lancun-shandong
+ne 1
+n 8
+dc 桃村 taocun-shandong
+n 6
+box 烟台
+end
+
+begin rail china-rail
+m taocun-shandong
+e 6
+dc 乳山
+e 3
+ne 1
+n 1
+dc 文登
+n 4
+box 威海
+end
+
+begin rail china-rail
+m dezhou-shandong 0 1
+e 11
+dc 滨州
+e 8
+dc 东营南
+e 8
+dc 大家洼
+end
+
+begin rail-h china-rail
+m qingdao-north
+n 6
+box 莱阳
+n 5
+box 桃村北 taocun-north-shandong
+n 1
+nw 3
+end
+
+begin rail-h china-rail
+m taocun-north-shandong 0 -1
+ne 3
+e 10
+box 荣成
 end
 
 begin rail china-rail
 m dezhou-shandong
 w 18
 dc 衡水 hengshui-hebei
-w 2
-dr 衡水西
-w 3
+w 5
 nw 1
 n 2
 nw 1
@@ -570,7 +722,8 @@ w 2
 ur 晋州
 w 2
 ur 藁城
-w 8
+w 11
+lbox 石家庄 shijiazhuang 8 3
 end
 
 begin rail china-rail
@@ -735,9 +888,17 @@ end
 
 begin rail tianjin-9
 m tianjin
-se 2
-e 8
+se 4
+e 4
+box 泰达 taida-tianjin
+e 2
 dc 东海路
+end
+
+begin rail tianjin-lr
+m taida-tianjin
+n 3
+dc 学院区北
 end
 
 begin rail beijing-1
@@ -997,3 +1158,168 @@ w 5
 dc 香山
 end
 
+begin rail jinan-1
+m jinan-west-shandong 3 -2
+dc 方特
+sw 2
+se 1
+s 3
+box 王府庄
+w 4
+sw 1
+s 2
+sw 1
+w 2
+ur 工研院
+end
+
+begin rail qingdao-3
+m qingdao-north
+e 6
+box 李村 licun-qingdao
+s 6
+box 五四广场 54sq-qingdao
+w 6
+end
+
+begin rail qingdao-2
+m licun-qingdao 0 -2
+uc 李村公园
+s 2
+e 4
+box 苗岭路 miaolinglu-qingdao
+s 6
+w 4
+nw 2
+ur 芝泉路
+end
+
+begin rail qingdao-11
+m miaolinglu-qingdao
+n 4
+dc 世博园
+ne 3
+dc 水泊
+ne 3
+dc 钱谷山
+end
+
+begin rail shijiazhuang-3
+m shijiazhuang
+nw 2
+n 2
+box 新百广场 xinbai-shijiazhuang
+n 2
+ur 市二中
+end
+
+begin rail shijiazhuang-1
+m xinbai-shijiazhuang -4 0
+dc 西王
+e 11
+dc 洨河大道
+end
+
+begin rail nanjing-3
+m nanjing -9 0
+dc 林场
+e 5
+box 泰冯路 taifenglu-nanjing
+e 4
+se 3
+s 1
+box 鸡鸣寺
+s 2
+box 大行宫
+s 2
+se 5
+e 2
+dc 秣周东路
+end
+
+begin rail nanjing-1
+m nanjing 4 0
+ur 迈皋桥
+w 4
+sw 3
+s 1
+box 鼓楼 gulou-nanjing
+s 2
+box 新街口
+s 2
+box 安德门 andemen-nanjing
+s 1
+se 1
+e 13
+dc 中国药科大学
+end
+
+begin rail nanjing-4
+m gulou-nanjing -5 0
+ur 龙江
+e 17
+box 金马路
+e 4
+dc 仙林湖
+end
+
+begin rail nanjing-10
+m andemen-nanjing
+w 9
+dc 雨山路
+end
+
+begin rail nanjing-s1
+m nanjing-south
+s 7
+box 翔宇路南 xiangyulunan-nanjing
+e 5
+box ✈禄口机场
+e 4
+box 江宁 jiangning-nanjing
+end
+
+begin rail nanjing-s3
+m nanjing-south
+sw 2
+w 10
+box 油坊桥 youfangqiao-nanjing
+w 5
+dc 高家冲
+end
+
+begin rail nanjing-2
+m youfangqiao-nanjing
+n 4
+box 元通
+n 1
+ne 1
+e 14
+ne 1
+n 2
+ne 1
+e 3
+dc 经天路
+end
+
+begin rail nanjing-s7
+m jiangning-nanjing
+e 4
+dc 无想山
+end
+
+begin rail nanjing-s8
+m taifenglu-nanjing -1 2
+ur 泰山新村
+ne 1
+n 2
+ne 1
+e 10
+dc 金牛湖
+end
+
+begin rail nanjing-s9
+m xiangyulunan-nanjing
+s 4
+dc 高淳
+end

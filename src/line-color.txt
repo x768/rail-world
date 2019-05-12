@@ -275,6 +275,7 @@ tianjin-2 #ece114
 tianjin-3 #128bbe
 tianjin-6 #9f216f
 tianjin-9 #063a91
+tianjin-lr #8fc31f
 
 beijing-1 #a8353a
 beijing-2 #004a88
@@ -296,6 +297,40 @@ beijing-changping #de85bb
 beijing-fangshan #dc6016
 beijing-xijiao #e1261c
 
-shinjiazhuang-1 #e53e30
-shinjiazhuang-2 #00a1e0
+shijiazhuang-1 #e53e30
+shijiazhuang-3 #00a1e0
 
+jinan-1 #a55fc8
+
+qingdao-2 #c32a05
+qingdao-3 #006dbb
+qingdao-11 #304299
+qingdao-13 #009c86
+
+nanjing-1 #00a2df
+nanjing-2 #c7003f
+nanjing-3 #009651
+nanjing-4 #796baf
+nanjing-10 #eac384
+nanjing-s1 #4bbbb4
+nanjing-s3 #ba84ac
+nanjing-s7 #b46b7a
+nanjing-s8 #ff8000
+nanjing-s9 #ffc600
+
+shanghai-1 #ea0437
+shanghai-2 #87d300
+shanghai-3 #ffd100
+shanghai-4 #4f1f91
+shanghai-5 #a24cc8
+shanghai-6 #d71671
+shanghai-7 #ff7200
+shanghai-8 #009edb
+shanghai-9 #78c7eb
+shanghai-10 #bc87e6
+shanghai-11 #7c2230
+shanghai-12 #007b63
+shanghai-13 #f293d1
+shanghai-16 #32d4cb
+shanghai-17 #b67770
+shanghai-pujiang #999999

@@ -261,7 +261,7 @@ s 4
 end
 
 begin
-m $cape-sata-jp -30 30
+m $cape-sata-jp -30 10
 pos $amami-jp
 sw 6
 w 6
@@ -271,7 +271,7 @@ end
 
 # 沖縄
 begin
-m $amami-jp -40 34
+m $amami-jp -40 14
 sw 8
 nw 3
 sw 3
@@ -355,7 +355,7 @@ end
 
 # 台湾
 begin
-m -460 220
+m -460 200
 pos $taoyuan-tw
 sw 20
 s 85
@@ -426,7 +426,9 @@ w 17
 n 30
 w 6
 sw 34
-s 70
+s 5
+e 24
+s 100
 w *
 n *
 m -300 ^

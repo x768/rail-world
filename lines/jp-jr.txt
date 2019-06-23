@@ -1573,9 +1573,8 @@ end
 
 begin rail jr-east
 m shinagawa
-ne 2
 e 3
-ne 1
+ne 3
 e 7
 box 浜松町 hamamatsucho
 n 4
@@ -2266,7 +2265,11 @@ ne 3
 dc 坂町 sakamachi-niigata
 n 3
 dc 村上
-n 22
+n 3
+dc 府屋
+n 3
+dc あつみ温泉
+n 16
 dc 鶴岡
 n 4
 dc 余目
@@ -2972,7 +2975,19 @@ begin rail jr-hokkaido
 m tomakomai
 s 2
 se 4
-dc 鵡川
+uc 鵡川 mukawa-hokkaido
+end
+
+begin rail jr-hokkaido-light
+m mukawa-hokkaido
+se 3
+uc 日高門別
+se 3
+uc 静内
+se 3
+uc 浦河
+se 3
+uc 様似
 end
 
 begin rail jr-hokkaido
@@ -3865,7 +3880,9 @@ end
 
 begin rail sanriku-tetsudo
 m kuji-iwate
-s 26
+s 22
+dc 三陸
+s 4
 end
 
 begin rail others

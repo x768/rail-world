@@ -9,7 +9,7 @@
 })(() => {
     const main = document.getElementById('main');
     const layer_station = document.getElementById('layer-station');
-    let current_scroll = {x: -7130, y: -3320};
+    const current_scroll = {x: -7130, y: -3320};
     let down_point = null;
     let scale = 1;
 
@@ -49,7 +49,7 @@
                 scale *= 2;
             }
         } else if (e.deltaY > 0) {
-            if (scale > 0.25) {
+            if (scale > 0.125) {
                 scale /= 2;
             }
         }

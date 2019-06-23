@@ -1047,13 +1047,6 @@ e 3
 n 19
 end
 
-begin rail others
-m ueno-tokyo -3 0
-dr 東園
-w 2
-uc 西園
-end
-
 begin rail keisei
 m maihama-chiba 0 2
 box TDR maihama-chiba

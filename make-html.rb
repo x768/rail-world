@@ -1,6 +1,12 @@
 # charset: UTF-8
 
 
+OFFSET_X = 700
+OFFSET_Y = 300
+
+WIDTH = 1050
+HEIGHT = 650
+
 LINE_H = 13
 STEP = 12
 CIRCLE_R = 4
@@ -71,24 +77,6 @@ def draw_stations(out, stn, stn_link)
 end
 
 # --------------------------------------------------------------------------------------
-
-open("src/size.txt", "r") do |f|
-  f.each_line do|line|
-    line.chomp!
-    next if line.empty? || line.match(/^#/)
-    a = line.split(" ")
-    if a.size >= 3
-      if a[0] == "offset"
-        OFFSET_X = a[1].to_i
-        OFFSET_Y = a[2].to_i
-      elsif a[0] == "size"
-        WIDTH = a[1].to_i
-        HEIGHT = a[2].to_i
-      end
-    end
-  end
-end
-
 x = 0
 y = 0
 prev_dst = nil
@@ -98,7 +86,7 @@ stn_link = []
 
 # --------------------------------------------------------------------------------------
 
-open("out/style.css", "w") do |out|
+open("dst/style.css", "w") do |out|
   out.print <<EOS
 html, body {
   margin: 0;
@@ -175,7 +163,7 @@ end
 
 # --------------------------------------------------------------------------------------
 
-open("out/map.html", "w") do |out|
+open("dst/map.html", "w") do |out|
   out.print <<EOS
 <!doctype html>
 <html>

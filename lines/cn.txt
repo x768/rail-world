@@ -201,21 +201,33 @@ s 4
 box 德州东 dezhou-east-shandong
 s 8
 box 济南西 jinan-west-shandong
-s 10
+s 14
 box 泰安
-s 12
+s 20
 box 徐州东
-s 6
+s 10
 box 蚌埠南
 s 18
 lbox 南京南 nanjing-south 8 3
+ne 2
+e 15
+box 镇江南
+e 6
+box 丹阳北
+e 5
+box 常州北
+e 9
+box 无锡东
+e 11
+box 苏州北
+e 8
 end
 
 begin rail-h china-rail
 m jinan-west-shandong
 e 2
-se 2
-e 8
+se 3
+e 7
 box 淄博 jibo-shandong
 e 6
 box 潍坊
@@ -224,11 +236,26 @@ box 高密
 e 6
 box 胶州北
 e 5
-se 1
+se 5
 s 2
 lbox 青岛北 qingdao-north 8 3
 s 6
 box 青岛
+end
+
+begin rail-h china-rail
+m qingdao-north
+w 9
+nw 1
+n 8
+nw 1
+w 5
+box 高密北
+w 6
+box 濰坊北
+w 8
+box 淄博北
+sw 3
 end
 
 begin rail-h china-rail
@@ -590,31 +617,58 @@ dr 德州 dezhou-shandong
 s 11
 se 1
 e 9
-s 4
+s 8
 box 泰山 taishan-shandong
 s 2
 sw 1
 w 8
 sw 1
-s 2
+s 4
 box 磁窑
-s 3
-dc 兗州
-s 3
+s 6
+box 兗州
+s 2
+dc 程家庄 chengjiazhuang-shandong
+s 6
 box 徐州
-s 3
+s 5
 dc 蚌埠
 s 4
 dc 永宁镇
 s 7
 box 南京 nanjing
+ne 4
+e 12
+box 南京东
+e 1
+se 2
+s 6
+se 1
+e 2
+uc 镇江
+e 2
+se 1
+s 5
+se 1
+e 2
+dc 丹阳
+e 5
+dc 常州
+e 7
+box 无锡 wuxi-jiangsu
+e 13
+box 苏州 suzhou-jiangsu
+e 8
+box 南翔
+e 18
+lbox 上海 shanghai 8 3
 end
 
 begin rail china-rail
 m taishan-shandong 0 -2
-n 6
+n 9
 box 济南 jinan-shandong
-n 4
+n 5
 nw 1
 w 9
 end
@@ -638,17 +692,47 @@ box 胶州
 e 4
 box 蓝村 lancun-shandong
 e 4
+se 4
 end
 
 begin rail china-rail
-m jibo-shandong 0 4
+m qingdao-north
+sw 1
+w 3
+sw 1
+s 4
+dc 青岛西
+s 6
+dc 董家口
+s 14
+box 连云港 lianyungang-jiangsu
+s 5
+dc 盐城北
+s 3
+box 盐城
+s 4
+box 海安
+s 3
+end
+
+begin rail china-rail
+m jibo-shandong 0 6
 dc 八陡
-n 2
+n 3
 dc 博山
-n 8
+n 10
 dc 博兴
-n 7
+n 6
 dc 东营
+end
+
+begin rail china-rail
+m lianyungang-jiangsu
+w 16
+box 新沂 xinyi-jiangsu
+w 3
+ur 新沂西
+w 26
 end
 
 begin rail china-rail
@@ -657,7 +741,7 @@ e 6
 dc 莱芜东
 e 3
 ne 1
-n 6
+n 10
 end
 
 begin rail china-rail
@@ -671,7 +755,7 @@ end
 
 begin rail china-rail
 m taocun-shandong
-e 6
+e 10
 dc 乳山
 e 3
 ne 1
@@ -679,6 +763,15 @@ n 1
 dc 文登
 n 4
 box 威海
+end
+
+begin rail china-rail
+m xinyi-jiangsu
+s 4
+se 1
+e 4
+dc 袁北
+e 11
 end
 
 begin rail china-rail
@@ -693,12 +786,13 @@ end
 
 begin rail-h china-rail
 m qingdao-north
-n 6
+n 10
 box 莱阳
 n 5
 box 桃村北 taocun-north-shandong
 n 1
 nw 3
+w 4
 end
 
 begin rail-h china-rail
@@ -734,6 +828,18 @@ s 4
 dc 菏泽
 s 4
 dc 商丘南
+end
+
+begin rail china-rail
+m chengjiazhuang-shandong
+e 14
+dc 平邑
+e 10
+box 临沂
+e 16
+box 日照西
+e 3
+dc 日照
 end
 
 ################################# 地铁 ######################################
@@ -1323,3 +1429,99 @@ m xiangyulunan-nanjing
 s 4
 dc 高淳
 end
+
+begin rail wuxi-1
+m wuxi-jiangsu 0 -2
+ur 堰桥
+s 5
+box 三阳广场
+s 2
+dc 长广溪
+end
+
+begin rail wuxi-2
+m wuxi-jiangsu -5 3
+dc 梅园开原寺
+e 6
+ne 1
+n 6
+end
+
+begin rail suzhou-2
+m suzhou-jiangsu 0 -6
+ur 骑河
+s 6
+sw 3
+w 1
+box 广济南路
+s 4
+e 4
+box 石湖东路
+e 4
+dc 桑田岛
+end
+
+begin rail suzhou-4
+m suzhou-jiangsu -2 -3
+dr 龙道浜
+s 1
+se 2
+s 3
+box 乐桥
+s 6
+dc 红庄 hongzhuang-suzhou
+s 3
+dc 同里
+end
+
+begin rail suzhou-4
+m hongzhuang-suzhou
+w 3
+dc 木里
+end
+
+begin rail suzhou-1
+m suzhou-jiangsu -8 3
+dc 木渎
+e 12
+dc 钟南街
+end
+
+begin rail shanghai-4
+m shanghai 0 1
+w 5
+box 镇坪路
+w 5
+box 曹杨路
+w 5
+s 2
+box 金沙江路
+s 2
+box 中山公园
+s 4
+box 虹桥路
+s 2
+box 宜山路
+s 2
+e 5
+box 上海体育馆
+e 5
+box 东安路
+e 5
+box 大木桥路
+e 10
+box 西藏南路
+e 10
+box 蓝村路
+n 2
+box 世纪大道
+n 8
+box 大连路
+n 2
+w 5
+box 海伦路
+w 5
+box 宝山路
+w 10
+end
+

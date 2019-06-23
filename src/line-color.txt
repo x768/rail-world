@@ -334,3 +334,10 @@ shanghai-13 #f293d1
 shanghai-16 #32d4cb
 shanghai-17 #b67770
 shanghai-pujiang #999999
+
+wuxi-1 #ee3e41
+wuxi-2 #05aa44
+
+suzhou-1 #62bd19
+suzhou-2 #ff0000
+suzhou-4 #0645ad

@@ -48,7 +48,7 @@ lbox 浜松 hamamatsu 8 3
 se 1
 e 5
 ne 1
-lbox 掛川 kakegawa-shizuoka 8 3
+box 掛川 kakegawa-shizuoka
 se 1
 e 10
 ne 1
@@ -58,7 +58,7 @@ e 4
 box 新富士
 e 12
 ne 1
-lbox 三島 mishima-shizuoka 8 3
+box 三島 mishima-shizuoka
 se 1
 e 13
 ne 1
@@ -94,9 +94,15 @@ w 5
 sw 7
 box 西明石
 sw 1
-w 10
-nw 2
-w 23
+w 11
+nw 1
+lbox 姫路 himeji 8 3
+nw 1
+w 4
+sw 1
+box 相生 aioi-hyogo
+nw 1
+w 16
 sw 1
 lbox 岡山 okayama 8 3
 nw 1
@@ -112,7 +118,7 @@ w 5
 box 新尾道
 w 5
 sw 1
-lbox 三原 mihara-hiroshima 8 3
+box 三原 mihara-hiroshima
 nw 1
 w 4
 box 東広島
@@ -132,7 +138,7 @@ lbox 新山口 shin-yamaguchi 9 3
 nw 1
 w 10
 sw 1
-lbox 厚狭 asa-yamaguchi 8 3
+box 厚狭 asa-yamaguchi
 nw 1
 w 3
 sw 1
@@ -322,7 +328,7 @@ box 上ノ山温泉
 n 5
 lbox 山形 yamagata 8 3
 n 5
-dc 羽前千歳
+box 羽前千歳
 n 3
 box 天童
 n 3
@@ -430,14 +436,11 @@ nw 2
 w 5
 ur 加古川 kakogawa
 w 6
+sw 2
+w 4
+nw 1
 sw 1
-lbox 姫路 himeji 8 3
-sw 1
-w 5
-n 1
-lbox 相生 aioi-hyogo 6 3
-s 1
-w 2
+w 1
 nw 1
 n 2
 nw 1
@@ -456,7 +459,10 @@ nw 1
 sw 1
 w 12
 dc 尾道
-w 10
+w 5
+nw 1
+sw 1
+w 3
 dc 白市
 w 3
 dc 瀬野 seno-hiroshima
@@ -491,7 +497,10 @@ w 10
 dc 宇部
 w 3
 dc 小野田 onoda-yamaguchi
-w 18
+w 4
+nw 1
+sw 1
+w 12
 ur 幡生
 s 3
 box 下関 shimonoseki
@@ -1336,7 +1345,10 @@ e 4
 ne 2
 e 11
 box 新所原 shinjohara-shizuoka
-e 20
+e 14
+se 1
+ne 1
+e 4
 box 金谷 kanaya-shizuoka
 e 3
 ur 島田
@@ -1346,7 +1358,10 @@ e 3
 ur 吉原 yoshiwara-shizuoka
 e 5
 ur 沼津 numazu-shizuoka
-e 20
+e 4
+se 1
+ne 1
+e 14
 end
 
 begin rail jr-central
@@ -3799,7 +3814,7 @@ e 6
 box 西鹿島
 e 5
 se 2
-s 4
+s 5
 end
 
 begin rail oigawa

@@ -334,6 +334,7 @@ shanghai-13 #f293d1
 shanghai-16 #32d4cb
 shanghai-17 #b67770
 shanghai-pujiang #999999
+shanghai-maglev #009090
 
 wuxi-1 #ee3e41
 wuxi-2 #05aa44
